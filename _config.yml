@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ja-JP"
+locale                   : "ka-KR"
 title                    : "Knowledge beyond measure is man's greatest treasure"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -104,9 +104,9 @@ analytics:
 author:
   name             : "C YC"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "IT Developer who working in Tokyo, Japan"
+  bio              : "IT Dev who working in Tokyo"
   location         : "Tokyo, Japan"
-  email            : "roky98@naver.com"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
