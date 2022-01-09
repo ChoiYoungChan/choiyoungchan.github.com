@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "C YC"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile/profile.jpeg"
   bio              : "IT Dev who working in Tokyo"
   location         : "Tokyo, Japan"
   email            : 
