@@ -4,9 +4,11 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="list_main" id="category_tag_menu">
+      
       <li>
             📂 <span style="font-family:'Cafe24Oneprettynight';">Total Posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
+
       <li>
         <span class="nav__sub-title">Unity</span>
             <ul>
