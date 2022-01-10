@@ -34,7 +34,8 @@ GitHub의 원격 리포지토리에 로컬 리포지토리의 작업내용, 프�
 
 * 다음과 같이 리포지토리를 생성할 시에 ```.gitignore```파일을 만들 수 있다. <br> 
 '.gitignore template' 에서 유니티, UE4 같은 에디터의 템플렛을 설정할경우 해당 에디터나 템플렛의 기본 제공 라이브러리나 로그파일이 자동으로 gitignore파일에 작성된 상태로 생성이 된다. <br> 
-![gitignore_000](https://user-images.githubusercontent.com/40765022/148751266-5fb4cc2c-4d46-4895-a2b5-20e4d8a300c0.png) <br> 
+![gitignore_000](https://user-images.githubusercontent.com/40765022/148752883-c7697b8c-3fd4-4157-ab96-ad8b50be26c2.png)
+<br> 
 <br> 
 
 ### 터미널에서 생성하는법 <br>
