@@ -34,14 +34,14 @@ GitHub의 원격 리포지토리에 로컬 리포지토리의 작업내용, 프�
 
 * 다음과 같이 리포지토리를 생성할 시에 ignore파일을 만들 수 있다. <br> 
 '.gitignore template' 에서 유니티, UE4 같은 에디터의 템플렛을 설정할경우 해당 에디터나 템플렛의 기본 제공 라이브러리나 로그파일이 자동으로 gitignore파일에 작성된 상태로 생성이 된다. <br> 
-<img src="/assets/images/post/Git/gitignore_000.png/" width="90%" height="90%" title="gitignore_000" alt="gitignore_000"/>  <br> 
- <br> 
+![gitignore_000](https://user-images.githubusercontent.com/40765022/148751266-5fb4cc2c-4d46-4895-a2b5-20e4d8a300c0.png) <br> 
+<br> 
 
 ### 터미널에서 생성하는법 <br>
 * git프로젝트의 디렉터리에 들어가서 Git bash를 연 다음 아래의 명령어를 실행함으로서 '.gitignore'파일을 생성할 수 있다. <br> 
-<img src="/assets/images/post/Git/gitignore_001.png/" width="50%" height="50%" title="gitignore_001" alt="gitignore_001"/>  <br> 
+![gitignore_001](https://user-images.githubusercontent.com/40765022/148751318-a65f38e7-5eb2-4716-81c1-3ce30930041c.png) <br> 
  <br> 
-<img src="/assets/images/post/Git/gitignore_002.png/" width="50%" height="50%" title="gitignore_002" alt="gitignore_002"/>  <br> 
+![gitignore_002](https://user-images.githubusercontent.com/40765022/148751360-d89b749a-b9dd-4c8b-b2db-59960038cee1.png) <br> 
 생성된 '.gitignore'파일 <br> 
  <br> 
 
@@ -50,7 +50,8 @@ GitHub의 원격 리포지토리에 로컬 리포지토리의 작업내용, 프�
 [GitIgnore.io](https://www.toptal.com/developers/gitignore) <br> <br>
 위의 사이트에 들어가서 프로젝트 언어, 에디터, 툴 별로 '.gitignore'에 추가할 목록들을 생성할 수 있다. <br> <br>
 
-<img src="/assets/images/post/Git/gitignore_003.png/" width="70%" height="70%" title="gitignore_003" alt="gitignore_003"/>  <br>  <br>
+![gitignore_003](https://user-images.githubusercontent.com/40765022/148751396-7af81d8b-41c3-4425-9444-cc7902121db6.png) <br>
+<br>
 만약 Unity와 php 등등을 사용하는 경우 검색, 추가한 후 생성 버튼을 눌러주면 된다. <br>
 그러면 텍스트들이 나오는데 복사하여 '.gitignore'에 붙여넣으면된다.
 
