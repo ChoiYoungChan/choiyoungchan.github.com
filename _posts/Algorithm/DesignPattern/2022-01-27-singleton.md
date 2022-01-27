@@ -3,7 +3,7 @@ title:  "[Design Pattern] Singleton Pattern"
 excerpt: Singleton Pattern이란
 
 categories:
-  - design-pattern
+  - Design Pattern
 tags:
   - [Design Pattern, Singleton, Singleton Pattern, 싱글톤 패턴]
 
