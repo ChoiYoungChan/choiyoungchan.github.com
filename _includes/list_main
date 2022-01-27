@@ -19,14 +19,14 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Unity Code" %}
+                    {% if category[0] == "Code Unity" %}
                         <li><a href="/categories/unity-code" class="">Unity ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Unity Error Respond" %}
+                    {% if category[0] == "Error Respond Unity" %}
                         <li><a href="/categories/unity-error-respond" class="">Unity Error Respond ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}

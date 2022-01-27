@@ -3,7 +3,7 @@ title:  "[Unity] Singleton Pattern"
 excerpt: Unity에서 사용하는 Singleton Pattern
 
 categories:
-  - Unity Code
+  - Code Unity
 tags:
   - [Design Pattern, Singleton, Unity, 싱글톤]
 
