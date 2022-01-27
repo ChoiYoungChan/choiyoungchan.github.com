@@ -1,6 +1,6 @@
 ---
-title:  "[Design Pattern] Singleton Pattern"
-excerpt: Singleton Pattern
+title:  "[Unity] Singleton Pattern"
+excerpt: Unity에서 사용하는 Singleton Pattern
 
 categories:
   - Unity
@@ -14,6 +14,7 @@ date: 2022-01-15
 last_modified_at: 2022-01-15
 ---
 
+https://choiyoungchan.github.io/design%20pattern/singleton/
 
 싱글톤 패턴의 사용 이유와 개념은 위의 포스팅을 참조
 
