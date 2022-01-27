@@ -3,7 +3,7 @@ title:  "[Design Pattern] Design Pattern"
 excerpt: Design Pattern이란
 
 categories:
-  - design-pattern
+  - Design Pattern
 tags:
   - [Design Pattern, 디자인 패턴]
 
