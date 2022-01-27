@@ -19,15 +19,15 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Code" %}
-                        <li><a href="/categories/unity-code" class="">Unity ({{category[1].size}})</a></li>
+                    {% if category[0] == "Unity Code" %}
+                        <li><a href="/categories/unity-code" class="">Code ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Error Respond Unity" %}
-                        <li><a href="/categories/unity-error-respond" class="">Unity Error Respond ({{category[1].size}})</a></li>
+                    {% if category[0] == "Error Respond" %}
+                        <li><a href="/categories/unity-error-respond" class="">Error Respond ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -41,8 +41,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "UE4 Error Respond" %}
-                        <li><a href="/categories/ue4-error-respond" class="">UE4 Error Respond ({{category[1].size}})</a></li>
+                    {% if category[0] == "Error Respond" %}
+                        <li><a href="/categories/ue4-error-respond" class="">Error Respond ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
