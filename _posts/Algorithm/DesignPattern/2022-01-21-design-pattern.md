@@ -33,7 +33,7 @@ last_modified_at: 2022-01-21
 ---
 
 ### 싱글톤(Singleton)
-1개의 인스턴스만 생성하고 이후에는 이 인스턴스를 이용해 어디에서든지 참조할 수 있도록 하는 디자인 패턴
+1개의 인스턴스만 생성하고 이후에는 이 인스턴스를 이용해 어디에서든지 참조할 수 있도록 하는 디자인 패턴 <br>
 포스팅 : [싱글톤 패턴](https://choiyoungchan.github.io/design%20pattern/singleton/)
 <br>
 
