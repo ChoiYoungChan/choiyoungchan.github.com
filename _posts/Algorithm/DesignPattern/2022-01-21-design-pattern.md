@@ -31,10 +31,12 @@ last_modified_at: 2022-01-21
 ---
 ## 가장 많이 쓰이는 패턴
 ---
+
 ### 싱글톤(Singleton)
 1개의 인스턴스만 생성하고 이후에는 이 인스턴스를 이용해 어디에서든지 참조할 수 있도록 하는 디자인 패턴
 포스팅 : [싱글톤 패턴](https://choiyoungchan.github.io/design%20pattern/singleton/)
-<br><br>
+<br>
+
 
 ### 프로토타입(Prototype)
 인스턴스를 만들어 놓고 복사한 후 필요한 부분만 수정하여 사용하는 패턴.<br>

@@ -78,13 +78,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Live in Japan" %}
-                        <li><a href="/categories/live-in-japan" class="">Live in Japan ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
       </li>
   </ul>
 </nav>
