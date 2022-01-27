@@ -19,7 +19,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Code Unity" %}
+                    {% if category[0] == "Unity_Code" %}
                         <li><a href="/categories/unity-code" class="">Unity ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
