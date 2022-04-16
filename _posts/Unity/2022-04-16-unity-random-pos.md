@@ -66,16 +66,14 @@ OnpushRandomButton()함수내에서 생성할때 아래의 지역변수 randonPo
 <br>
 
 #### **실행 영상** <br>
-<video width="100%" height="100%" controls="controls">
-  <source src="assets\images\post\Unity\Unity\random_pos_005.mp4">
-</video>
+<iframe id="video" width="600" height="800" src="assets\images\post\Unity\Unity\random_pos_005.mp4" frameborder="0">
+</iframe>
 
  <br> <br>
 
 **[초기화버튼 추가]** <br>
-<video width="100%" height="100%" controls="controls">
-  <source src="assets\images\post\Unity\Unity\random_pos_006.mp4">
-</video>
+<iframe id="video" width="600" height="800" src="assets\images\post\Unity\Unity\random_pos_006.mp4" frameborder="0">
+</iframe>
 
 
 
