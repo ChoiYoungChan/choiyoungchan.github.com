@@ -1,11 +1,11 @@
 ---
-title:  "QuickSort"
-excerpt: Unity에서 사용하는 QuickSort
+title:  "[Algorithm] QuickSort"
+excerpt: Unity에서 사용하는 퀵정렬(QuickSort)
 
 categories:
   - Algorithm
 tags:
-  - [Algorithm, QuickSort, 퀵 정렬, 정렬, Unity]
+  - [Algorithm, QuickSort, 퀵 정렬, 정렬]
 
 toc: true
 toc_sticky: true
