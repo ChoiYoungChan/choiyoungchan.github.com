@@ -3,9 +3,9 @@ title:  "QuickSort"
 excerpt: Unity에서 사용하는 QuickSort
 
 categories:
-  - Unity Code
+  - Algorithm
 tags:
-  - [Unity, QuickSort, 퀵 정렬, 정렬]
+  - [Algorithm, QuickSort, 퀵 정렬, 정렬, Unity]
 
 toc: true
 toc_sticky: true
