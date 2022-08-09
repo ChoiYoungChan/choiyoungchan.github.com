@@ -3,7 +3,7 @@ title:  "[C++] Atoi함수 구현"
 excerpt: 직접 c++에서 atoi함수를 구현해 보자
 
 categories:
-  - Cpp
+  - cpp
 tags:
   - [c++, Atoi, Cpp]
 
