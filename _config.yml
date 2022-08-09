@@ -222,8 +222,8 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
-languages: ['ja', 'ko', 'en']
-default_lang: 'ko'
+languages: ["en", "ko", "ja"]
+default_lang: "ko"
 exclude_from_localization: ['javascript', 'images', 'css']
 parallel_localization: false
 
