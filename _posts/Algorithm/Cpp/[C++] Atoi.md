@@ -5,7 +5,7 @@ excerpt: 직접 c++에서 atoi함수를 구현해 보자
 categories:
   - Cpp
 tags:
-  - [c++, Atoi, Cpp]
+  - [Programming, c++, Atoi, Cpp]
 
 toc: true
 toc_sticky: true
