@@ -2,7 +2,7 @@
 title:  "[C++] Atoi함수 구현"
 
 categories:
-  - Cpp
+  - Algorithm
 tags:
   - [Programming, c++, Atoi, Cpp]
 
