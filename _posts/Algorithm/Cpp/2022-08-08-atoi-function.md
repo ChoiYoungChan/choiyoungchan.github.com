@@ -27,17 +27,23 @@ last_modified_at: 2022-08-08
 ## 코드 및 주석
 ---
 
-<선언 및 main>
+[선언 및 main]
 
-![atoi_00](https://user-images.githubusercontent.com/40765022/183655865-ae177f1d-dd17-4d88-9ee4-18c36e89b69b.png) <br>
+![atoi_00](https://user-images.githubusercontent.com/40765022/183655865-ae177f1d-dd17-4d88-9ee4-18c36e89b69b.png)
 
-<Atoi 함수 정의>
+ <br>
 
-![atoi_01](https://user-images.githubusercontent.com/40765022/183655939-bb40f24f-20d1-48dd-96ff-63fc8eaf6ac7.png) <br>
+[Atoi 함수 정의]
 
-<전체 코드>
+![atoi_01](https://user-images.githubusercontent.com/40765022/183655939-bb40f24f-20d1-48dd-96ff-63fc8eaf6ac7.png) 
 
-![atoi_02](https://user-images.githubusercontent.com/40765022/183656298-ba1bae2d-2158-4412-a704-a934f85b8abc.png)<br>
+<br>
+
+[전체 코드]
+
+![atoi_02](https://user-images.githubusercontent.com/40765022/183656298-ba1bae2d-2158-4412-a704-a934f85b8abc.png)
+
+<br>
 
 ## 실행 결과
 ---
