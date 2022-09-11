@@ -1,11 +1,11 @@
 ---
-title:  "[Algorithm] HeapSort"
-excerpt: Unity에서 사용하는 힙 정렬(HeapSort)
+title:  "[Algorithm] MergeSort"
+excerpt: Unity에서 사용하는 합병 정렬(MergeSort)
 
 categories:
   - Algorithm
 tags:
-  - [Algorithm, HeapSort, 힙 정렬, 정렬]
+  - [Algorithm, MergeSort, 합병 정렬, 정렬]
 
 toc: true
 toc_sticky: true
@@ -15,26 +15,32 @@ last_modified_at: 2022-04-30
 ---
 
 ## 개요
-힙 정렬(Heap Sort)이란?
-=> 이진 트리구조를 이용하여 정렬하는 방식으로, 최대 최소값을 빠르게 가져오기 위해 고안된 정렬방식<br> 
+#### 합병 정렬(MergeSort)이란?
+=> 분할 정복 알고리즘중 하나로 일반적으로 사용되는 정렬방식.<br> 
+ 구현했을때 안정 정렬에 속한다.<br> 
+---
 
-정렬하는 과정
-1. 가장 끝 자리에 노드를 삽입
-2. 노드와 부모 노드를 비교한다.
-3. 규칙(크거나 작거나)에 맞으면 그대로 두고, 그렇지 않으면 부모와 교환한다.
-4. 모든 노드가 규칙에 맞을 때까지 3번을 반복
+#### 분할 정복 방법 <br> 
+* 문제를 작은 2개의 문제로 분리하고 각각을 해결한 다음, 결과를 모아서 원래의 문제를 해결하는 전략
+* 대개 순환 호출을 이용하여 구현한다.
+---
+
+#### 정렬하는 과정
+1. 분할(Devide) : 입력 배열을 같은 크기의 2개으 ㅣ부분 배열로 분할 한다.
+2. 정복(Conquer) : 부분배열을 정렬한다. 부분 배열의 크기가 충분히 작지 않으면 순환 호출을 이용하여 다시 분할 정복 방법을 적용한다.
+3. 결합(Combine) : 정렬된 부분 배열들을 하나의 배열에 합병한다.
 <br>
 
-![heapsort](https://user-images.githubusercontent.com/40765022/166093865-c9c5c6fc-9bed-4c8d-8ae0-3509946b181f.png)
-> (이미지 출처 :https://namu.wiki/w/%ED%9E%99%20%ED%8A%B8%EB%A6%AC)
+![mergesort](https://user-images.githubusercontent.com/40765022/189512910-63127b9d-d415-4308-be86-5b0840ccb2c2.jpg)
+> (이미지 출처 :https://medium.com/@paulsoham/merge-sort-63d75df76388)
 
 <br>
 
 * 장점
-  * 최대 최소값을 구할때 유용하다.
+  * 항상 동일한 시간이 소요되기 때문에 어떤 경우에도 좋은 성능을 보장받을 수 있다.
 
 *  단점
-   * 데이터의 상태에 따라 다소 느리다.
+   * 정렬할 데이터의 양이 많은 경우에는 그만큼 이동횟수가 많아지므로 시간적 낭비도 많아지게 된다.
  <br>
 
 ## 유니티에서 예제
@@ -44,33 +50,235 @@ last_modified_at: 2022-04-30
 아래는 유니티를 기준으로 작성하였으나 기본적으로 C#이기때문에 숫자를 입력하고 출력하는 부분 외에는 바로 참고하셔도 무방합니다.<br><br>
 
 [초기화 및 출력함수]<br>
-![2022-04-29-HeapSort_000](https://user-images.githubusercontent.com/40765022/166093945-b77e9b75-c2dd-4d33-a4a6-97fb30f0821e.png)
-<br><br>
+``` C#
+    #region private
+    [SerializeField] InputField m_input_txt;
+    [SerializeField] Text m_answer_txt;
 
-[힙생성]<br>
-![2022-04-29-HeapSort_002](https://user-images.githubusercontent.com/40765022/166093963-1b9e4520-a5df-41ce-8e9c-805cbe162b9b.png)
-<br><br>
+    string[] m_split_text;
+    string m_input_text, m_output_text;
+    List<int> split_number_list;
+    #endregion
+
+    public override void Awake()
+    {
+        m_input_text = null;
+        m_output_text = null;
+
+        split_number_list = new List<int>();
+    }
+
+    /// <summary>
+    /// splite number and add in to list
+    /// </summary>
+    private void InitList()
+    {
+        m_input_text = m_input_txt.GetComponent<InputField>().text;
+
+        // split text of inputfield
+        m_split_text = m_input_text.Split(',');
+
+        // add splited text into int list(split_number_list) 
+        for (int count = 0; count < m_split_text.Length; count++)
+        {
+            split_number_list.Add(int.Parse(m_split_text[count]));
+        }
+    }
+
+    /// <summary>
+    /// Show number list
+    /// </summary>
+    private void ShowText(List<int> _list_data)
+    {
+        for (int count = 0; count < _list_data.Count; count++)
+        {
+            m_output_text += _list_data[count].ToString() + " ";
+        }
+
+        // Display result of Sort
+        m_answer_txt.text = m_output_text;
+    }
+```
+<br>
+
+[초기와 및 마지소트 실행]<br>
+
+``` C#
+
+    /// <summary>
+    /// activate when press enter
+    /// </summary>
+    private void OnclickEnter()
+    {
+        InitList();
+        ShowText(Devide(split_number_list));
+    }
+```
+<br>
 
 [정렬]<br>
-![2022-04-29-HeapSort_001](https://user-images.githubusercontent.com/40765022/166093970-7a084460-dacd-490f-b4a9-f739ff51f691.png)
-<br><br>
+``` C#
+    private List<int> Merge(List<int> _left_list, List<int> _right_list)
+    {
+        //_left_list.Sort((a, b) => { return a > b ? 1 :-1; });
+        List<int> mergedList = new List<int>();
+        int leftIndex = 0;
+        int rightIndex = 0;
+
+        while((leftIndex < _left_list.Count) && (rightIndex < _right_list.Count))
+        {
+            if (_left_list[leftIndex] <= _right_list[rightIndex]) {
+                mergedList.Add(_left_list[leftIndex]);
+                leftIndex++;
+            } else {
+                mergedList.Add(_right_list[rightIndex]);
+                rightIndex++;
+            }
+        }
+
+        if(_left_list.Count > leftIndex) {
+            for (int count = leftIndex; count < _left_list.Count; count++) {
+                mergedList.Add(_left_list[count]);
+            }
+        } else if(_right_list.Count > rightIndex) {
+            for (int count = rightIndex; count < _right_list.Count; count++) {
+                mergedList.Add(_right_list[count]);
+            }
+        }
+
+        return mergedList;
+    }
+
+    private List<int> Devide(List<int> _list)
+    {
+        if (_list.Count <= 1) return _list;
+        int _middle_point = _list.Count / 2;
+
+        List<int> _left_list = _list.ToList();
+        List<int> _right_list = _list.ToList();
+
+        _left_list.RemoveRange(_middle_point, (_list.Count - _middle_point));
+        _left_list = Devide(_left_list);
+
+        _right_list.RemoveRange(0, _middle_point);
+        _right_list = Devide(_right_list);
+
+        return Merge(_left_list, _right_list);
+    }
+```
+<br>
 
 [전체 코드]<br>
-![2022-04-29-HeapSort_003](https://user-images.githubusercontent.com/40765022/166093980-333a5e72-4a0b-44f9-a509-2a4d7aa2a98c.png)
-<br><br>
+``` C#
+public class MergeSortManager : BaseTemplateClass
+{
+    #region private
+    [SerializeField] InputField m_input_txt;
+    [SerializeField] Text m_answer_txt;
 
-### 실행 영상
-<video width="70%" height="70%" controls="controls">
-  <source src="/assets/images/post/Algorithm/Sort/HeapSort_004.mp4" type="video/mp4">
-</video>
+    string[] m_split_text;
+    string m_input_text, m_output_text;
+    List<int> split_number_list;
+    #endregion
 
-<br>
+    public override void Awake()
+    {
+        m_input_text = null;
+        m_output_text = null;
+
+        split_number_list = new List<int>();
+    }
+
+    /// <summary>
+    /// splite number and add in to list
+    /// </summary>
+    private void InitList()
+    {
+        m_input_text = m_input_txt.GetComponent<InputField>().text;
+
+        // split text of inputfield
+        m_split_text = m_input_text.Split(',');
+
+        // add splited text into int list(split_number_list) 
+        for (int count = 0; count < m_split_text.Length; count++)
+        {
+            split_number_list.Add(int.Parse(m_split_text[count]));
+        }
+    }
+
+    /// <summary>
+    /// Show number list
+    /// </summary>
+    private void ShowText(List<int> _list_data)
+    {
+        for (int count = 0; count < _list_data.Count; count++)
+        {
+            m_output_text += _list_data[count].ToString() + " ";
+        }
+
+        // Display result of Sort
+        m_answer_txt.text = m_output_text;
+    }
+
+    private List<int> Merge(List<int> _left_list, List<int> _right_list)
+    {
+        //_left_list.Sort((a, b) => { return a > b ? 1 :-1; });
+        List<int> mergedList = new List<int>();
+        int leftIndex = 0;
+        int rightIndex = 0;
+
+        while((leftIndex < _left_list.Count) && (rightIndex < _right_list.Count))
+        {
+            if (_left_list[leftIndex] <= _right_list[rightIndex]) {
+                mergedList.Add(_left_list[leftIndex]);
+                leftIndex++;
+            } else {
+                mergedList.Add(_right_list[rightIndex]);
+                rightIndex++;
+            }
+        }
+
+        if(_left_list.Count > leftIndex) {
+            for (int count = leftIndex; count < _left_list.Count; count++) {
+                mergedList.Add(_left_list[count]);
+            }
+        } else if(_right_list.Count > rightIndex) {
+            for (int count = rightIndex; count < _right_list.Count; count++) {
+                mergedList.Add(_right_list[count]);
+            }
+        }
+
+        return mergedList;
+    }
+
+    private List<int> Devide(List<int> _list)
+    {
+        if (_list.Count <= 1) return _list;
+        int _middle_point = _list.Count / 2;
+
+        List<int> _left_list = _list.ToList();
+        List<int> _right_list = _list.ToList();
+
+        _left_list.RemoveRange(_middle_point, (_list.Count - _middle_point));
+        _left_list = Devide(_left_list);
+
+        _right_list.RemoveRange(0, _middle_point);
+        _right_list = Devide(_right_list);
+
+        return Merge(_left_list, _right_list);
+    }
+
+    /// <summary>
+    /// activate when press enter
+    /// </summary>
+    private void OnclickEnter()
+    {
+        InitList();
+        ShowText(Devide(split_number_list));
+    }
+}
+```
 <br>
 
-<video width="70%" height="70%" controls="controls">
-  <source src="/assets/images/post/Algorithm/Sort/HeapSort_005.mp4" type="video/mp4">
-</video>
-<br>
-<br>
 
 [Top](#){: .btn .btn--primary }{: .align-right}
