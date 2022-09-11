@@ -29,19 +29,110 @@ last_modified_at: 2022-08-08
 
 [선언 및 main]
 
-![atoi_00](https://user-images.githubusercontent.com/40765022/183655865-ae177f1d-dd17-4d88-9ee4-18c36e89b69b.png)
+``` C++
+int main()
+{
+    char *text = new char[10];
+    
+    // input text data to char
+    printf("input number text : ");
+    scanf_s("%s" , text, 10);
 
+    // output Atoi result
+    printf("output Atoi result : %d", Atoi(text));
+}
+```
  <br>
 
 [Atoi 함수 정의]
+``` C++
+/// <summary>
+/// Define Atoi function
+/// </summary>
+/// <param name="_text_data">input char text data</param>
+/// <returns></returns>
+int Atoi(char* _text_data) {
+    int result = 0, positive = 1;
 
-![atoi_01](https://user-images.githubusercontent.com/40765022/183655939-bb40f24f-20d1-48dd-96ff-63fc8eaf6ac7.png) 
+    // check whitespace
+    while ((*_text_data == ' ') || (*_text_data == '\n') || (9 <= *_text_data && *_text_data <= 13))
+        _text_data++;
 
+    // check + or -
+    if (*_text_data == '+' || *_text_data == '-') {
+        if (*_text_data == '-')
+            positive = -1;
+        _text_data++;
+    }
+
+    // change text data to int data
+    while ('0' <= *_text_data && *_text_data <= '9') {
+        // _data * 10 is make number of digits
+        result *= 10;
+        // reason why doing [ - '0' ], 
+        // cuz input text data is entered as an ASCII code value,
+        // so, you can get input number through subtract 0(ASCII value 48)
+        result += (*_text_data - '0') * positive;
+        _text_data++;
+    }
+    return result;
+}
+```
 <br>
 
 [전체 코드]
+```C++
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
 
-![atoi_02](https://user-images.githubusercontent.com/40765022/183656298-ba1bae2d-2158-4412-a704-a934f85b8abc.png)
+// declaration Atoi function
+int Atoi(char *);
+
+int main()
+{
+    char *text = new char[10];
+    
+    // input text data to char
+    printf("input number text : ");
+    scanf_s("%s" , text, 10);
+
+    // output Atoi result
+    printf("output Atoi result : %d", Atoi(text));
+}
+
+/// <summary>
+/// Define Atoi function
+/// </summary>
+/// <param name="_text_data">input char text data</param>
+/// <returns></returns>
+int Atoi(char* _text_data) {
+    int result = 0, positive = 1;
+
+    // check whitespace
+    while ((*_text_data == ' ') || (*_text_data == '\n') || (9 <= *_text_data && *_text_data <= 13))
+        _text_data++;
+
+    // check + or -
+    if (*_text_data == '+' || *_text_data == '-') {
+        if (*_text_data == '-')
+            positive = -1;
+        _text_data++;
+    }
+
+    // change text data to int data
+    while ('0' <= *_text_data && *_text_data <= '9') {
+        // _data * 10 is make number of digits
+        result *= 10;
+        // reason why doing [ - '0' ], 
+        // cuz input text data is entered as an ASCII code value,
+        // so, you can get input number through subtract 0(ASCII value 48)
+        result += (*_text_data - '0') * positive;
+        _text_data++;
+    }
+    return result;
+}
+```
 
 <br>
 
