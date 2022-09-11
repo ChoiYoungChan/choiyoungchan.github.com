@@ -3,7 +3,7 @@ title:  "[Unity] Obb파일 빌드하기"
 excerpt: build Obb file at Unity
 
 categories:
-  - Unity etc
+  - Unity
 tags:
   - [Unity, Obb]
 
