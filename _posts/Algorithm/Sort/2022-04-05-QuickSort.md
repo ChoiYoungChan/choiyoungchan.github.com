@@ -45,19 +45,202 @@ last_modified_at: 2022-04-23
 아래는 유니티를 기준으로 작성하였으나 기본적으로 C#이기때문에 숫자를 입력하고 출력하는 부분 외에는 바로 참고하셔도 무방합니다.<br>
 
 [초기화 및 실행함수]<br>
-![2022-04-23-QuickSort_000](https://user-images.githubusercontent.com/40765022/164966059-93c6e0f3-0375-4c86-aaa0-c39df0c9c625.png)
+``` C#
+#region private
+    [SerializeField] InputField m_input_txt;
+    [SerializeField] Text m_answer_txt;
+
+    string[] m_split_text;
+    string m_input_text, m_output_text;
+    List<int> input_txt_split;
+#endregion
+
+    public override void Awake()
+    {
+        m_input_text = null;
+        m_output_text = null;
+
+        input_txt_split = new List<int>();
+    }
+
+    /// <summary>
+    /// active this func When press Enter key
+    /// </summary>
+    public void OnclickEnter()
+    {
+        m_input_text = m_input_txt.GetComponent<InputField>().text;
+
+        // split text of inputfield
+        m_split_text = m_input_text.Split(',');
+
+        // add splited text into int list(input_txt_split) 
+        for (int count = 0; count < m_split_text.Length; count ++) {
+            input_txt_split.Add(int.Parse(m_split_text[count]));
+        }
+
+        // start Quick Sort
+        QuickSort(0, input_txt_split.Count - 1);
+
+        for (int count = 0; count < input_txt_split.Count; count++) {
+            m_output_text += input_txt_split[count].ToString() + " ";
+        }
+
+        // Display result of QuickSort
+        m_answer_txt.text = m_output_text;
+    }
+```
+
 <br>
 
 [퀵 정렬]<br>
-![2022-04-23-QuickSort_001](https://user-images.githubusercontent.com/40765022/164966071-68b7183f-3ac6-447b-acc5-b4af9e41017d.png)
+``` C#
+    /// <summary>
+    /// QuickSort Func
+    /// </summary>
+    /// <param name="left_num"> left number </param>
+    /// <param name="right_num"> right number </param>
+    private void QuickSort(int left_num, int right_num)
+    {
+        if (left_num < right_num) {
+            int pivot = Partition(left_num, right_num);
+            if (pivot > 1) {
+                QuickSort(left_num, pivot - 1);
+            }
+
+            if ((pivot + 1) < right_num) {
+                QuickSort((pivot + 1), right_num);
+            }
+        }
+    }
+```
 <br>
 
 [피벗 설정 및 정렬]<br>
-![2022-04-23-QuickSort_002](https://user-images.githubusercontent.com/40765022/164966092-e3838f02-b4ca-4ad3-9654-8d1f9a9d0037.png)
+``` C#
+    /// <summary>
+    /// make up pivot and sort
+    /// </summary>
+    /// <param name="left_num"> left number </param>
+    /// <param name="right_num"> right number </param>
+    /// <returns></returns>
+    private int Partition(int left_num, int right_num)
+    {
+        int pivot = input_txt_split[left_num];
+        while(true) {
+            while(input_txt_split[left_num] < pivot) {
+                left_num++;
+            }
+            while(input_txt_split[right_num] > pivot) {
+                right_num--;
+            }
+
+            if(left_num < right_num) {
+                int temp_num = input_txt_split[right_num];
+                input_txt_split[right_num] = input_txt_split[left_num];
+                input_txt_split[left_num] = temp_num;
+            } else {
+                return right_num;
+            }
+        }
+    }
+```
 <br>
 
 [전체 코드]<br>
-![2022-04-23-QuickSort_003](https://user-images.githubusercontent.com/40765022/164965412-6b2090a2-4920-4a13-8af5-ca9b4f1e671e.png)<br>
+``` C#
+public class QuickSortManager : BaseTemplateClass
+{
+#region private
+    [SerializeField] InputField m_input_txt;
+    [SerializeField] Text m_answer_txt;
+
+    string[] m_split_text;
+    string m_input_text, m_output_text;
+    List<int> input_txt_split;
+#endregion
+
+    public override void Awake()
+    {
+        m_input_text = null;
+        m_output_text = null;
+
+        input_txt_split = new List<int>();
+    }
+
+    /// <summary>
+    /// active this func When press Enter key
+    /// </summary>
+    public void OnclickEnter()
+    {
+        m_input_text = m_input_txt.GetComponent<InputField>().text;
+
+        // split text of inputfield
+        m_split_text = m_input_text.Split(',');
+
+        // add splited text into int list(input_txt_split) 
+        for (int count = 0; count < m_split_text.Length; count ++) {
+            input_txt_split.Add(int.Parse(m_split_text[count]));
+        }
+
+        // start Quick Sort
+        QuickSort(0, input_txt_split.Count - 1);
+
+        for (int count = 0; count < input_txt_split.Count; count++) {
+            m_output_text += input_txt_split[count].ToString() + " ";
+        }
+
+        // Display result of QuickSort
+        m_answer_txt.text = m_output_text;
+    }
+
+    /// <summary>
+    /// QuickSort Func
+    /// </summary>
+    /// <param name="left_num"> left number </param>
+    /// <param name="right_num"> right number </param>
+    private void QuickSort(int left_num, int right_num)
+    {
+        if (left_num < right_num) {
+            int pivot = Partition(left_num, right_num);
+            if (pivot > 1) {
+                QuickSort(left_num, pivot - 1);
+            }
+
+            if ((pivot + 1) < right_num) {
+                QuickSort((pivot + 1), right_num);
+            }
+        }
+    }
+
+    /// <summary>
+    /// make up pivot and sort
+    /// </summary>
+    /// <param name="left_num"> left number </param>
+    /// <param name="right_num"> right number </param>
+    /// <returns></returns>
+    private int Partition(int left_num, int right_num)
+    {
+        int pivot = input_txt_split[left_num];
+        while(true) {
+            while(input_txt_split[left_num] < pivot) {
+                left_num++;
+            }
+            while(input_txt_split[right_num] > pivot) {
+                right_num--;
+            }
+
+            if(left_num < right_num) {
+                int temp_num = input_txt_split[right_num];
+                input_txt_split[right_num] = input_txt_split[left_num];
+                input_txt_split[left_num] = temp_num;
+            } else {
+                return right_num;
+            }
+        }
+    }
+}
+```
+<br>
 
 
 ### 실행 영상

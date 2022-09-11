@@ -45,6 +45,7 @@ int main()
  <br>
 
 [Atoi 함수 정의]
+
 ``` C++
 /// <summary>
 /// Define Atoi function
@@ -81,6 +82,7 @@ int Atoi(char* _text_data) {
 <br>
 
 [전체 코드]
+
 ```C++
 #include <stdio.h>
 #include <stdlib.h>
