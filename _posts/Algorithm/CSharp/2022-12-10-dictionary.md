@@ -25,7 +25,7 @@ Dictionary는 상기와 같이 Key값을 이용하여 Value를 취득하므로 �
 따라서 항목과 값이 세트 데이터로서 다루어질 필요가 있을 경우 Dictionary 형을 이용합니다.
 <br><br>
 
-### 예제
+## 예제
 --- 
 
 정의
@@ -49,7 +49,7 @@ var 오브젝트명 = new Dictionary<Key데이터형, Value데이터형>()
 
 <br>
 
-데이터 추가 및 Key로 Value를 출력
+### 데이터 추가 및 Key로 Value를 출력
 ``` C#
 using System;
 using System.Collections.Generic;
@@ -76,7 +76,7 @@ namespace test
 }
 ```
 
-### build result
+####  build result
 
 ```
 Export Dictionary
@@ -86,7 +86,7 @@ Export Dictionary
 ```
 <br>
 
-Key 또는 Value만 출력
+### Key 또는 Value만 출력
 ``` C#
 using System;
 using System.Collections.Generic;
@@ -120,7 +120,7 @@ namespace test
 }
 ```
 
-### build result
+#### build result
 
 ```
 1
@@ -132,7 +132,7 @@ Cat
 ```
 <br>
 
-Key 또는 Value를 검색
+### Key 또는 Value를 검색
 ``` C#
 using System;
 using System.Collections.Generic;
@@ -171,7 +171,7 @@ namespace test
 }
 ```
 
-### build result
+#### build result
 
 ```
 searching Key
