@@ -118,9 +118,6 @@ $masthead-link-color: $primary-color !default;
 $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
 
-/* notices */
-$notice-background-mix: 80% !default;
-$code-notice-background-mix: 90% !default;
 
 /* syntax highlighting (base16) */
 $base00: #263238 !default;
@@ -148,16 +145,16 @@ $small: 600px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
 $large: 1024px !default;
-$x-large: 1280px !default;
+$x-large: 1400px !default;
 $max-width: $x-large !default;
 
 /*
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
-$right-sidebar-width-wide: 400px !default;
+$right-sidebar-width-narrow: 100px !default;
+$right-sidebar-width: 200px !default;
+$right-sidebar-width-wide: 250px !default;
 
 /*
    Other
