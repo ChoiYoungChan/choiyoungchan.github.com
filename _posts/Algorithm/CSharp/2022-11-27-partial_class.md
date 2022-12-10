@@ -47,8 +47,7 @@ Partial Class란?<br>
 아래의 예시에서는 car01, car02라는 cs파일에 클래스를 분할한 예시 입니다.  <br> 
  <br> 
 
-> [Car01.cs]
-
+[Car01.cs]
 ``` C#
 partial class Car
 {
@@ -64,8 +63,7 @@ partial class Car
 
  <br> 
 
-> [Car02.cs]
-
+[Car02.cs]
 ``` C#
 partial class Car
 {
@@ -85,8 +83,7 @@ partial class Car
 
 <br> 
 
-> [Main.cs]
-
+[Main.cs]
 ``` C#
 class Example
 {
