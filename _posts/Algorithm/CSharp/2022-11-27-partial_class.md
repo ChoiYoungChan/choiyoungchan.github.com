@@ -48,6 +48,7 @@ Partial Class란?<br>
  <br> 
 
 > [Car01.cs]
+
 ``` C#
 partial class Car
 {
@@ -60,9 +61,11 @@ partial class Car
   }
 }
 ```
+
  <br> 
 
 > [Car02.cs]
+
 ``` C#
 partial class Car
 {
@@ -80,9 +83,10 @@ partial class Car
 }
 ```
 
- <br> 
+<br> 
 
 > [Main.cs]
+
 ``` C#
 class Example
 {
