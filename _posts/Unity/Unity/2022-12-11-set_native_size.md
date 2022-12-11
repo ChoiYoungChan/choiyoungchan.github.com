@@ -15,7 +15,7 @@ last_modified_at: 2022-12-11
 ---
 
 ## 개요
-Set Native Size란?
+Set Native Size란? <br>
 ---
 => 유니티의 이미지 컴포넌트에 기본 탑재된 기능으로 sprite 이미지의 크기로 오브젝트의 크기를 자동으로 조절해주는 기능. <br>
 
