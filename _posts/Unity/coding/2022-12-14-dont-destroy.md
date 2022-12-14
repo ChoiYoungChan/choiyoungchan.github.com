@@ -56,7 +56,12 @@ public class DontDestoryObject : MonoBehaviour
 {
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        var obj = FindObjectsOfType<DontDestoryObject>();
+        if (obj.Length == 1) {
+            DontDestroyOnLoad(gameObject);
+        } else {
+            Destroy(gameObject);
+        }
     }
 }
 ```
