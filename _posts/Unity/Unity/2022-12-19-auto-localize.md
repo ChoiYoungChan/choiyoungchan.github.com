@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 로컬라이즈"
+title:  "[Unity] 유니티 다국어 지원(Localize)"
 excerpt: Auto Localize in Unity
 
 categories:
