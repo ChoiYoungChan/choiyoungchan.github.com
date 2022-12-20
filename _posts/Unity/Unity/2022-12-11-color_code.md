@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] Color Code(Hex code)"
+title:  "[Unity] 유니티 컬러코드Color Code(Hex code)"
 excerpt: Color code in Unity Script
 
 categories:

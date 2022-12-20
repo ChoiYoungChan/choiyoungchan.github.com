@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 자동 이미지 크기 조정"
+title:  "[Unity] 유니티 자동 이미지 크기 조정"
 excerpt: Unity Set Native Size
 
 categories:

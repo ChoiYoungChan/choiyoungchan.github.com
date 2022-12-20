@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] Obb파일 빌드하기"
+title:  "[Unity] 유니티에서 Obb파일 빌드하기"
 excerpt: build Obb file at Unity
 
 categories:

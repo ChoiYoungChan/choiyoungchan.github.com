@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 스크립트에서 문자열 줄바꿈"
+title:  "[Unity] 유니티 스크립트에서 문자열 줄바꾸기"
 excerpt: Wrap string in script
 
 categories:
