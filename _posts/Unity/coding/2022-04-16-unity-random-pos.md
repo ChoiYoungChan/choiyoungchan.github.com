@@ -1,6 +1,6 @@
 ---
-title:  "[Unity] GameObject Random Instantiate"
-excerpt: Unity에서 랜덤 좌표에 생성 및 좌표 이동
+title:  "[Unity] "Unity에서 랜덤 좌표에 생성 및 좌표 이동"
+excerpt: GameObject Random Instantiate in Unity
 
 categories:
   - Unity Code

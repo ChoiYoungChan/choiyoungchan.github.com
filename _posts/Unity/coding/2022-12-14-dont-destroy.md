@@ -1,6 +1,6 @@
 ---
-title:  "[Unity] 파괴하지 않을 게임 오브젝트 만들기"
-excerpt: Don't Destroy On Land
+title:  "[Unity] 유니티 파괴하지 않을 게임 오브젝트 만들기"
+excerpt: Don't Destroy On Land in Unity
 
 categories:
   - Unity Code
