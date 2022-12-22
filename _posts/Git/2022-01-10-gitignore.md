@@ -1,5 +1,5 @@
 ---
-title:  "[Git] .gitignore만들기"
+title:  "[Git] .gitignore(무시할 파일 목록)을 만드는법"
 excerpt: .gitignore(무시할 파일 목록)을 만드는법에 관하여
 
 categories:
