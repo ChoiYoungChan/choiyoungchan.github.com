@@ -1,11 +1,11 @@
 ---
 title:  "[Unity] 유니티 델리게이트"
-excerpt: Deligate in Unity
+excerpt: delegate in Unity
 
 categories:
   - Unity Code
 tags:
-  - [Programming, Unity, Deligate, 델리게이트, 유니티]
+  - [Programming, Unity, delegate, 델리게이트, 유니티]
 
 toc: true
 toc_sticky: true
