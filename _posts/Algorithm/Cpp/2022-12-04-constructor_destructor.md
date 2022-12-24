@@ -52,7 +52,7 @@ last_modified_at: 2022-08-13
 #### 기본 생성자
 ---
 
-```C++
+```c++
 class TestCpp
 {
 public:
@@ -86,7 +86,7 @@ TestCpp::TestCpp()
 이 2개의 생성자는 함수 오버로드로 인해 같은 클래스 안에서 공존할 수 있습니다.<br> 
 실제로 각각 고유한 서명이므로 원하는 수 만큼 생성자를 정의할 수 있습니다.<br>
 
-```C++
+```c++
 #pragma once
 #include <iostream>
 
@@ -122,7 +122,7 @@ TestCpp::TestCpp(std::string _name, int _age)
 
 이 생성자를 매개 변수와 함께 사용하는 방법은 아래와 같이 직접 초기화 형식의 초기화를 사용하면 됩니다. <br>
 
-```C++
+```c++
 #include "TestCpp.h"
 
 int main()
@@ -139,7 +139,7 @@ int main()
 ---
 상기의 2가지 예제의 생성자를 아래와 같이 단순화 하는것도 가능합니다. <br>
 
-```C++
+```c++
 #pragma once
 #include <iostream>
 
@@ -186,7 +186,7 @@ void TestCpp::ShowInfo()
 
 main함수에서 호출 <br>
 
-```C++
+```c++
 #include "TestCpp.h"
 
 int main()
@@ -202,7 +202,7 @@ int main()
 
 ### 소멸자
 
-```C++
+```c++
 #pragma once
 #include <iostream>
 
@@ -242,7 +242,7 @@ TestCpp::~TestCpp()
 
 실행 결과
 
-```C++
+```c++
 소멸자 호출, NULL : 0
 ```
 
