@@ -29,11 +29,12 @@ Interface란?<br>
 4. 실제 object 의 class 정보를 제공하고 싶지 않을 때 혹은 명확히 하고 싶을 때 사용한다. 
 <br><br>
 
+
 ### 예제
 --- 
 
 다음과 같이 interface라고 선언후 Interface의 약자인 I + 인터페이스 이름 형식으로 지정후 필요 Method를 선언하시면됩니다.
-``` C#
+```c#
 interface IMessage
 {
     void DisplayMessage();
@@ -43,7 +44,7 @@ interface IMessage
  <br> 
 인터페이스를 상속 받은 클래스에서 인터페이스의 Method를 구현
 
-``` C#
+```c#
 class MessageBox : IMessage
 {
     private string _message;
@@ -77,7 +78,7 @@ class TextMessage : IMessage
 전체 소스코드
 
 InterFace
-``` C#
+```c#
 interface IMessage
 {
     void DisplayMessage();
@@ -86,7 +87,7 @@ interface IMessage
 ```
 
 Main Class
-``` C#
+```c#
 using System;
 
 class MessageBox : IMessage

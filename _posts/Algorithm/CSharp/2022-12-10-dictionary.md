@@ -30,15 +30,16 @@ Dictionary는 상기와 같이 Key값을 이용하여 Value를 취득하므로 �
 
 정의
 3가지 방법이 있으며 아래와 같습니다.
-``` C#
+
+```c#
 var 오브젝트명 = new Dictionary<Key데이터형, Value데이터형>();
 ``` 
 
-``` C#
+```c#
 Dictionary<Key데이터형, Value데이터형> 오브젝트명 = new Dictionary<Key데이터형, Value데이터형>()
 ``` 
 
-``` C#
+```c#
 // 초기화도 같이 하는 방법
 var 오브젝트명 = new Dictionary<Key데이터형, Value데이터형>()
     {
@@ -50,7 +51,8 @@ var 오브젝트명 = new Dictionary<Key데이터형, Value데이터형>()
 <br>
 
 ### 데이터 추가 및 Key로 Value를 출력
-``` C#
+
+```c#
 using System;
 using System.Collections.Generic;
 namespace test
@@ -87,7 +89,8 @@ Export Dictionary
 <br>
 
 ### Key 또는 Value만 출력
-``` C#
+
+```c#
 using System;
 using System.Collections.Generic;
 namespace test
@@ -133,7 +136,8 @@ Cat
 <br>
 
 ### Key 또는 Value를 검색
-``` C#
+
+```c#
 using System;
 using System.Collections.Generic;
 namespace test

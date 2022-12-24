@@ -48,7 +48,7 @@ Partial Class란?<br>
  <br> 
 
 [Car01.cs]
-``` C#
+```c#
 partial class Car
 {
   private string _name;
@@ -64,7 +64,7 @@ partial class Car
  <br> 
 
 [Car02.cs]
-``` C#
+```c#
 partial class Car
 {
   public string Name
@@ -84,7 +84,7 @@ partial class Car
 <br> 
 
 [Main.cs]
-``` C#
+```c#
 class Example
 {
   void Main()
