@@ -25,7 +25,7 @@ last_modified_at: 2022-08-11
 ### 코드 및 실행 결과
 ---<br>
 
-``` C++
+```c++
 #include <stdio.h>
 
 int Strlen(char* str);
@@ -61,7 +61,7 @@ int Strlen(char* str)
 ### 코드 및 실행 결과
 ---<br>
 
-```  C++
+```c++
 #include <stdio.h>
 
 char* Strcpy(char text1[], char text2[]);
@@ -106,7 +106,7 @@ char* Strcpy(char text1[], char text2[])
 ### 코드 및 실행 결과
 ---<br>
 
-``` C++
+```c++
 #include <stdio.h>
 
 char* Strcat(char text1[], char text2[]);
@@ -151,7 +151,7 @@ char* Strcat(char text1[], char text2[])
 ### 코드 및 실행 결과
 ---<br>
 
-``` C++
+```c++
 #include <stdio.h>
 
 char* Strcmp(char text1[], char text2[]);

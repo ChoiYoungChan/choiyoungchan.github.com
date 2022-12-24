@@ -29,7 +29,7 @@ last_modified_at: 2022-08-08
 
 [선언 및 main]
 
-``` C++
+```c++
 int main()
 {
     char *text = new char[10];
@@ -46,7 +46,7 @@ int main()
 
 [Atoi 함수 정의]
 
-``` C++
+```c++
 /// <summary>
 /// Define Atoi function
 /// </summary>
@@ -83,7 +83,7 @@ int Atoi(char* _text_data) {
 
 [전체 코드]
 
-```C++
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
