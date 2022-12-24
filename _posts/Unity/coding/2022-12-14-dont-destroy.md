@@ -28,7 +28,7 @@ last_modified_at: 2022-12-14
 
 사용방법은 매우 간단하며, 아래와 같이 DontDestroyOnLand를 사용하시면 됩니다.
 
-``` C#
+```c#
 public class DontDestoryObject : MonoBehaviour
 {
     private void Awake()
@@ -51,7 +51,7 @@ public class DontDestoryObject : MonoBehaviour
 첫번째 방법 입니다. <br>
 코드상에서 중복되는 오브젝트인지 먼저 확인후 없애기 또는 DontDestroyOnLoad처리를 해줍니다. <br>
 
-``` C#
+```c#
 public class DontDestoryObject : MonoBehaviour
 {
     private void Awake()

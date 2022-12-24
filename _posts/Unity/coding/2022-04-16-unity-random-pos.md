@@ -29,7 +29,7 @@ last_modified_at: 2022-04-16
 
 ---
 #### **선언**<br> 
-``` C#
+```c#
     #region private
     [SerializeField] GameObject m_prefab;
     [SerializeField] BoxCollider m_area;
@@ -55,7 +55,7 @@ m_cubelist : 생성한 오브젝트를 관리할 리스트 <br>
 
 ---
 #### **영역 및 랜덤 좌표 지정 부분** <br>
-``` C#
+```c#
     /// <summary>
     /// Calculate Random Pos
     /// </summary>
@@ -73,9 +73,13 @@ m_cubelist : 생성한 오브젝트를 관리할 리스트 <br>
 ``` 
 <br>
 
+
+#### **Initialize및 오브젝트 생성 부분** 
 ---
-#### **Initialize및 오브젝트 생성 부분** <br>
-``` C#
+
+<br>
+
+```c#
     private void Initializa()
     {
         m_random_button.onClick.AddListener(OnPushRandomButton);
@@ -113,7 +117,8 @@ m_cubelist : 생성한 오브젝트를 관리할 리스트 <br>
 초기화함수에서 버튼을 누르면 실행할 함수를 지정하고 리스트 및 플래그등을 초기화<br>
 OnpushRandomButton()함수내에서 생성할때 아래의 지역변수 randonPos 를 선언하지 않고 CalcRandomPos()함수를 Instantiate에 바로 넣어도 상관은 없으나, <br>
 가독성의 문제로 지역변수를 선언-> Instantiate에 넣는 방식으로 하였습니다. <br> <br>
-``` C#
+
+```c#
 /// <summary>
     /// Activate When Press Random Button
     /// </summary>
@@ -139,9 +144,12 @@ OnpushRandomButton()함수내에서 생성할때 아래의 지역변수 randonPo
     }
 ``` 
 
+
+#### **전체 코드** 
 ---
-#### **전체 코드** <br>
-``` C#
+<br>
+
+```c#
 public class GameManager : MonoBehaviour
 {
     #region private

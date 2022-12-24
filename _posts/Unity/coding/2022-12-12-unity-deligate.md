@@ -37,7 +37,7 @@ last_modified_at: 2022-12-12
 Method의 몸체(내용)만 있는 Method를 말하며, 이 익명의 Method를 델리게이트에 사용할 수 있습니다.<br>
 단순히 Method명 대신 아래와 같이 delegate키워드와 함께 익명 Method의 형태를 넣으면 됩니다.<br>
 
-``` C#
+```c#
 delegate(매개변수) { 내용; };
 ```
 
@@ -45,7 +45,7 @@ delegate(매개변수) { 내용; };
 상기의 익명의 Method 보다 간단하게 람다식으로도 가능하며 아래와 같이 사용할 수 있습니다.<br>
 ( ()=> 부분 입니다.)<br>
 
-``` C#
+```c#
 test_delegate _test = (x, y) => x + y;
 ```
 <br>
@@ -58,7 +58,7 @@ Action : 반환값이 없는 델리게이트
 Func : 반환값이 있느 델리게이트
 
 #### Action을 이용한 방법
-``` C#
+```c#
  Action _testAction = ShowLog;
  _testAction();
 ```
@@ -68,7 +68,7 @@ Func : 반환값이 있느 델리게이트
 Func의 경우 인수와 반환 타입 모두 제네릭 표시를 해야 되기 때문에 순서에 맞게 적는것이 중요합니다.<br>
 <인수1, 반환타입>처럼 반환타입을 마지막에 적어야 됩니다.<br>
 
-```C#
+```c#
 Func<int, string> _testFunc = AddNumber;
 Debug.Log(_testFunc(10));
 ```
@@ -81,7 +81,7 @@ Debug.Log(_testFunc(10));
 
 ### 미리 정의된 Method를 전달하는 델리게이트
 
-``` C#
+```c#
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -109,7 +109,7 @@ public class TestDelegate : MonoBehaviour
 
 ### Anonymous method(익명 또는 이름없는 Method)
 
-``` C#
+```c#
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -131,7 +131,7 @@ public class TestDelegate : MonoBehaviour
 
 ### Lambda(람다식)
 
-``` C#
+```c#
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -155,7 +155,7 @@ public class TestDelegate : MonoBehaviour
 
 #### Action
 
-``` C#
+```c#
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -175,8 +175,10 @@ public class TestDelegate : MonoBehaviour
     }
 }
 ```
+
 Action 에서 람다식 이용
-``` C#
+
+```c#
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -196,7 +198,7 @@ public class TestDelegate : MonoBehaviour
 
 #### Func
 
-``` C#
+```c#
 using System;
 using UnityEngine;
 using UnityEngine.UI;
