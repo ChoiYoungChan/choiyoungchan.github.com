@@ -19,7 +19,7 @@ Interface란?<br>
 => 한마디로 인터페이스는 Method 원형들의 집합에 이름을 붙인 것으로, 상속 받을 클래스에 기능이나 속성을 지정하는 역할을 합니다. <br>
 C#이나 Java같은 다른 OOP언어에서는 인터페이스 형식을 제공하지만, C++에서는 인터페이스 형식을 제공하지 않고 순수 가상 Method를 이용하여 정의할 수 있습니다. <br>
 
-C#에서 인터페이스 -> [C#]()  <br><br>
+C#에서 인터페이스 -> [C# Interface](https://choiyoungchan.github.io/c%20sharp/interface/)  <br><br>
 
 
 ### 예제
