@@ -29,6 +29,7 @@ Interface란?<br>
 4. 실제 object 의 class 정보를 제공하고 싶지 않을 때 혹은 명확히 하고 싶을 때 사용한다. 
 <br><br>
 
+C++에서는 인터페이스 형식을 제공하지는 않지만 순수 가상 함수를 이용하여 정의할 수 있습니다. -> [C++ Interface](https://choiyoungchan.github.io/cpp/interface/) <br>
 
 ### 예제
 --- 
