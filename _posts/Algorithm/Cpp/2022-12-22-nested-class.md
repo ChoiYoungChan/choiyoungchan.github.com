@@ -26,7 +26,7 @@ last_modified_at: 2022-12-22
 * 특정 클래스 내부에서만 사용되므로 클래스 구조가 단순해집니다. (public으로 선언시 외부에서 접근 가능)
 
 C#에서의 중첩 클래스또한 기본적인 개념은 비슷합니다. <br>
-참조 -> [C++ Inner Class](https://choiyoungchan.github.io/c%20sharp/nested-class/) <br>
+참조 -> [C# Inner Class](https://choiyoungchan.github.io/c%20sharp/nested-class/) <br>
 
 <br>
 

@@ -26,6 +26,9 @@ last_modified_at: 2022-12-22
 
 <br>
 
+C++에서의 중첩 클래스또한 기본적인 개념은 비슷합니다. <br>
+참조 -> [C++ Inner Class](https://choiyoungchan.github.io/cpp/nested-class/) <br>
+
 <br>
 
 ### 예제
