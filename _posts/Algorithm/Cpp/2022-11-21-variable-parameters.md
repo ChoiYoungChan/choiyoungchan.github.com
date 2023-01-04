@@ -25,7 +25,7 @@ last_modified_at: 2022-11-21
 ---
 
 먼저 아래와 같이 <stdarg.h> 헤더를 사용하기때문에 include해줍니다.<br>
-```C++
+```c++
 #include <stdarg.h>
 ```
 상기의 헤더 파일에는 va_start를 포함한 몇몇가지가 정의 되어 있습니다.<br>
@@ -37,14 +37,14 @@ last_modified_at: 2022-11-21
 
 가변인자를 가지는 함수는 아래와 같이 매개변수를 고정인자와 가변인자를 넣어야합니다.<br>
 가변인자는 '...'으로 표현하며, 고정인자의 뒤에 와야 합니다. <br>
-```C++
+```c++
 void AddWidget(int widget_count, ...)
 ```
 <br>
 
 va_list는 가변인자의 주소를 나타내는 포인터 입니다.<br>
 va_start(va_list는, 고정인자)는 초기화 작업으로, 고정인자 바로 뒤에 가변인자를 배치하고 va_list에 첫 가변인자의 주소를 할당합니다.<br>
-```C++
+```c++
 va_list _va_list;
 va_start(_va_list, widget_count);
 ```
@@ -52,7 +52,7 @@ va_start(_va_list, widget_count);
 
 va_arg(va_list, 자료형)는 va_start로 할당한 va_list의 값(가변인자 값)을 리턴한 후 va_list의 주소를 자료형만큼 뒤로 이동시킵니다. <br>
 그렇게되면 다음 가변인자의 주소값이 va_list로 할당되고, 이를 가변인자 개수만큼 반복하여 모든 가변인자들을 출력할 수 있습니다. <br>
-```C++
+```c++
 for(int i=0; i<widget_count; i++)
 {
     int result_num = va_arg(_va_list, int);
@@ -61,12 +61,12 @@ for(int i=0; i<widget_count; i++)
 ```
 
 마지막으로, va_end();는 va_list를 초기화하는 역할 입니다.
-```C++
+```c++
 va_end(_va_list);
 ```
 
 전체 코드
-```C++
+```c++
 #include <stdio.h>
 #include <stdarg.h>
 
