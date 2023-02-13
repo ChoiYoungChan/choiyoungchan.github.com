@@ -1,5 +1,5 @@
 ---
-title:  "[C++] 문자열 함수 (Strlen, strlcpy, strcat, strcmp)"
+title:  "[C++] 문자열 함수 (Strlen, strlcpy, strcat, strcmp) 구현하기"
 excerpt: Strlen, strlcpy, strcat, strcmp
 
 categories:
