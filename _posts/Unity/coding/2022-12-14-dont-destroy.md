@@ -76,8 +76,9 @@ public class DontDestoryObject : MonoBehaviour
 
 세번째 방법 입니다. <br>
 상기의 2가지 방법은 1개의 오브젝트일때 유용하지만 여러개일 경우 적절하지 않습니다. <br>
-만약 복수의 오브젝를 없애지 않는 처리를 한다면 Scene 배치 방식 보다 Prefab으로 관리하고 필요한 시점에 생성하게 하는것이 편하다. <br>
-이 경우 생성, 불필요시 없애는 라이프 사이클의 관리가 필요하다. <br>
+만약 복수의 오브젝를 없애지 않는 처리를 한다면 Scene 배치 방식 보다 Prefab으로 관리하고 필요한 시점에 생성하게 하는것이 편합니다. <br>
+이 경우 생성, 불필요시 없애는 라이프 사이클의 관리가 필요합니다. <br>
+
 ![dontdestroyonload_001](https://user-images.githubusercontent.com/40765022/207613273-d022ee4b-75c5-4688-9598-1e142b6d859f.png) <br><br>
 
 <br>
