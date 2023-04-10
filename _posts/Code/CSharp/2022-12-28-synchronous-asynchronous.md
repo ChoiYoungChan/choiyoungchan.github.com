@@ -39,7 +39,7 @@ C++에서 사용하는 동기 비동기 -> [C++ 동기 비동기]()<br><br><br>
 
 ### 사용법
 --- 
-C#에서 동기 처리를 하기위해서는 아래의 2가지 키워드를 알고 있어야합니다.
+C#에서 동기 처리를 하기위해서는 아래의 2가지 키워드를 알고 있어야합니다.<br>
 
 ```c#
 async // await키워드를 Method내에서 사용 할 수 있게 만들어주는것
@@ -48,7 +48,7 @@ await // 비동기 처리의 흐름을 제어하는 키워드로 실질적인 �
 <br>
 
 async void이렇게도 사용할 수 있으며,이렇게 사용하면 비동기 메서드를 호출하는 쪽에서 비동기 제어할 수 없습니다. <br>
-종종 UI버튼 이벤트 등 이벤트 핸들러로 사용할 때 void를 사용하곤 합니다.
+종종 UI버튼 이벤트 등 이벤트 핸들러로 사용할 때 void를 사용하곤 합니다.<br><br>
 
 사용 예시
 ```c#
@@ -72,9 +72,10 @@ public async Task<int> TestAsync()
 
 전체적인 코드에서 사용법 예시 입니다. <br>
 아래에서 보시다시피 Main스레드에서는 TestAsync를 호출하고 ```await Task.Delay(5000);``` 를 실행하여 내부 타이머를 사용해 스레드 풀의 큐에 들어가게 됩니다. <br>
-메인 스레드는 약 5초뒤  ```await Task.Delay(5000);``` 작업이 끝나면 스레드 풀에 있는 잉여 스레드가 End TestAsync를 출력합니다. <br>
+메인 스레드는 약 5초뒤  ```await Task.Delay(5000);``` 작업이 끝나면 스레드 풀에 있는 잉여 스레드가 End TestAsync를 출력합니다. <br><br><br>
 
-비동기 처리 사용 코드와 결과
+
+비동기 처리 사용 코드
 ```c#
 using System;
 using System.Threading.Tasks;
@@ -98,7 +99,7 @@ public class Program
 
 
 
-동기 처리 사용 코드와 결과
+동기 처리 사용 코드
 ```c#
 using System;
 using System.Threading.Tasks;
