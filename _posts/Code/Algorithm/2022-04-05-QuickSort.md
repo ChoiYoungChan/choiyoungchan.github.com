@@ -1,5 +1,5 @@
 ---
-title:  "[Algorithm] QuickSort"
+title:  "[Sort] QuickSort"
 excerpt: Unity에서 사용하는 퀵정렬(QuickSort)
 
 categories:

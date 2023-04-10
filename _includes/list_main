@@ -46,7 +46,7 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">C/C++/C#</span>
+        <span class="nav__sub-title">Code</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Cpp" %}
@@ -65,6 +65,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
                         <li><a href="/categories/Algorithm" class="">Algorithm ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "AI" %}
+                        <li><a href="/categories/AI" class="">AI ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
