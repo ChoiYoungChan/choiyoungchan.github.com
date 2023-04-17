@@ -5,7 +5,7 @@ excerpt: Implementing function that obtains string length from C#
 categories:
   - C Sharp
 tags:
-  - [Programming, C#, Strlen, C Sharp]
+  - [C#, string length, C Sharp]
 
 toc: true
 toc_sticky: true
