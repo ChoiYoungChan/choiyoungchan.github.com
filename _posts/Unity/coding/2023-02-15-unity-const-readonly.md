@@ -1,6 +1,6 @@
 ---
 title:  "[Unity] 유니티 const readonly차이점과 특징"
-excerpt: CSV in Unity
+excerpt: difference between const and readonly in Unity
 
 categories:
   - Unity Code
