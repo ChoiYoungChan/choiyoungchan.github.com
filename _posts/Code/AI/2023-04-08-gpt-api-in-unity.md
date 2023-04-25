@@ -20,7 +20,7 @@ last_modified_at: 2023-04-08
 그렇다면 지금까지 Unity에 AI가 없었는가? 라고 하기에는 기존의 Unity에도 AI를 사용하는 부분이 있었습니다.<br>
 바로 유니티와 언리얼의 NavMesh라는것이며, 상세한 설명은 아래의 포스팅을 참조해 주시기 바랍니다.
 
-[유니티 NavMesh]() <br>
+[유니티 NavMesh](https://choiyoungchan.github.io/unity/navmesh/) <br>
 [UE4 NavMesh]() <br>
 
 기존에는 네비게이션 경로를 계산하여 AI에이전트가 걸어다닐 수 있는 표면을 만드는 정도였다면,<br>
