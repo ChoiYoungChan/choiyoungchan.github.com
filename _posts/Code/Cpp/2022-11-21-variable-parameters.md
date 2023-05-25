@@ -86,11 +86,11 @@ void AddWidget(int widget_count, ...)
 
 int main()
 {
-    print(0, 10); // print : 10
+    AddWidget(0, 10); // print : 10
     printf("\n");
-    print(1, 10, 20); // print : 10 20
+    AddWidget(1, 10, 20); // print : 10 20
     printf("\n");
-    print(2, 10, 20, 30); // print : 10 20 30 
+    AddWidget(2, 10, 20, 30); // print : 10 20 30 
 }
 ```
 
