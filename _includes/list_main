@@ -40,6 +40,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "UE4 Code" %}
+                        <li><a href="/categories/ue4-code" class="">Code ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Error Respond" %}
                         <li><a href="/categories/ue4-error-respond" class="">Error Respond ({{category[1].size}})</a></li>
                     {% endif %}
