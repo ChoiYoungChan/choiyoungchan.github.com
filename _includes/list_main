@@ -84,8 +84,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Data Structure" %}
-                        <li><a href="/categories/data-structure" class="">Data Structure ({{category[1].size}})</a></li>
+                    {% if category[0] == "DataStructure" %}
+                        <li><a href="/categories/data-structure" class="">DataStructure ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
