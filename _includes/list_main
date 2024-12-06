@@ -84,8 +84,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "DataStructure" %}
-                        <li><a href="/categories/datastructure" class="">DataStructure ({{category[1].size}})</a></li>
+                    {% if category[0] == "Design Pattern" %}
+                        <li><a href="/categories/design-pattern" class="">Design Pattern ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -96,6 +96,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
         <span class="nav__sub-title">ETC</span>
                 <ul>
                     {% for category in site.categories %}
