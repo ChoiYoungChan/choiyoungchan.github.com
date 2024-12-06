@@ -3,7 +3,7 @@ title:  "[Data Structure] 연결리스트(Linked List)"
 excerpt: Linked List
 
 categories:
-  - datastructure
+  - Data Structure
 tags:
   - [data structure, 연결리스트, Linked List, 링크드리스트]
 

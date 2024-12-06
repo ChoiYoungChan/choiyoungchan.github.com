@@ -3,7 +3,7 @@ title:  "[Data Structure] 딕셔너리(Dictionary)"
 excerpt: Dictionary
 
 categories:
-  - datastructure
+  - Data Structure
 tags:
   - [datastructure, 딕셔너리, Dictionary]
 
