@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 디버그 모드"
+title:  "[Unity] 유니티 인스펙터 디버그 모드(Inspector Debug Mode)"
 excerpt: Unity Debug Mode
 
 categories:
