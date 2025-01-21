@@ -1,5 +1,5 @@
 ---
-title:  "[C#] Interface란"
+title:  "[C#] C#에서 인터페이스(Interface)사용법과 설명 완벽 정리 (C# 예시 코드 포함)"
 excerpt: C# 에서 사용하는 Interface란
 
 categories:
@@ -14,9 +14,9 @@ date: 2022-12-10
 last_modified_at: 2022-12-10
 ---
 
-## 개요
-Interface란?<br>
-=> 한마디로 인터페이스는 Method 원형들의 집합에 이름을 붙인 것으로,  상속 받을 클래스에 기능이나 속성을 지정하는 역할을 합니다. <br>
+## 인터페이스(Interface)란?
+---
+한마디로 인터페이스는 Method 원형들의 집합에 이름을 붙인 것으로,  상속 받을 클래스에 기능이나 속성을 지정하는 역할을 합니다. <br>
 인터페이스는 추상클래스와 매우 유사하며, 인터페이스에서는 Method를 선언하고  실체는 클래스가 상속 받아 인터페이스의 Method를 구현하는 방식입니다.
 
 추상 클래스와 차이점은 추상클래스는 다중상속을 지원하지 않지만 인터페이스는 다중상속을 지원하며, 인터페이스 자체로 인스턴스 생성이 안된다는 특징이 있습니다.<br>
@@ -31,9 +31,9 @@ Interface란?<br>
 
 C++에서는 인터페이스 형식을 제공하지는 않지만 순수 가상 함수를 이용하여 정의할 수 있습니다. -> [C++ Interface](https://choiyoungchan.github.io/cpp/interface/) <br>
 
-### 예제
---- 
 
+## 예제
+--- 
 다음과 같이 interface라고 선언후 Interface의 약자인 I + 인터페이스 이름 형식으로 지정후 필요 Method를 선언하시면됩니다.
 ```c#
 interface IMessage
@@ -42,7 +42,8 @@ interface IMessage
     void SetMessage(string _text);
 }
 ```
- <br> 
+<br> 
+
 인터페이스를 상속 받은 클래스에서 인터페이스의 Method를 구현
 
 ```c#
@@ -143,9 +144,6 @@ I Love Dog
 More then Cat
 ```
 
-<br>
+<br><br>
 
-
-
-<br>
 [Top](#){: .btn .btn--primary }{: .align-right}

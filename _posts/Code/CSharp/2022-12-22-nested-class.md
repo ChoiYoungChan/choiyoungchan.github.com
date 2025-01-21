@@ -1,5 +1,5 @@
 ---
-title:  "[C#] C#에서 사용하는 중첩 클래스"
+title:  "[C#] C#에서 중첩 클래스(Nested Class)사용법과 설명 완벽 정리 (C# 예시 코드 포함)"
 excerpt: InnerClass in C#
 
 categories:
@@ -14,9 +14,9 @@ date: 2022-12-22
 last_modified_at: 2022-12-22
 ---
 
-## 개요
-중첩 클래스란?<br>
-=> 클래스 내부에 클래스를 정의 하여 사용하는 구현방식을 말합니다. <br>
+## 중첩 클래스(Nested Class)란?
+---
+클래스 내부에 클래스를 정의 하여 사용하는 구현방식을 말합니다. <br>
 중첩 클래스를 이용하여 클래스를 그룹화 할 수 있으며, 클래스의 사용 범위를 제한 할 수 있습니다.<br><br>
 
 중첩 클래스를 사용하는 이유
@@ -120,9 +120,6 @@ Test Inner Class by OuterClass
 Test Inner Class by InnerClass
 ```
 
-<br>
+<br><br>
 
-
-
-<br>
 [Top](#){: .btn .btn--primary }{: .align-right}

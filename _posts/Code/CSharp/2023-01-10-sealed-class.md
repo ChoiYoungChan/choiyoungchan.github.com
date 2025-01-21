@@ -1,5 +1,5 @@
 ---
-title:  "[C#] C#에서 봉인 클래스 및 봉인 Method"
+title:  "[C#] C#에서 봉인 클래스(Sealed Class) 및 봉인 Method(Sealed Method)사용법과 설명 완벽 정리 (C# 예시 코드 포함)"
 excerpt: Sealed Class and Sealed Method in C#
 
 categories:
@@ -22,7 +22,8 @@ last_modified_at: 2023-01-10
 sealed class TestClass
 ```
 
-봉인 클래스의 특징
+### 봉인 클래스의 특징
+---
 * 봉인 클래스는 상속을 피하거나 제한하기 위해 고안되었습니다.
 * 다른 클래스에 상속될 수 없으므로 상속 계층에서 최하위 클래스여야 합니다.
 * 봉인 클래스와 추상 클래스는 다릅니다.
@@ -31,7 +32,8 @@ sealed class TestClass
 
 <br>
 
-추상 클래스와 차이점
+### 추상 클래스와 차이점
+---
 * 추상 클래스에는 추상 및 비추상 Method가 존재하지만, 봉인 클래스에는 추상 및 가상 Method가 존재할 수 없습니다.
 * 추상 클래스는 직접 인스턴스화할 수 없습니다. 하지만, 봉인 클래스는 인스턴스를 생성할 수 있습니다.
 * 추상 클래스를 사용하기 위해서는 확장된 클래스를 만들어야 합니다. 하지만, 봉인된 클래스에서 확장된 클래스를 만드는 것은 불가능합니다.
@@ -41,15 +43,12 @@ sealed class TestClass
 
 ### 봉인 Method(Sealed Method)
 부모 클래스에 정의된 클래스를 자식 클래스에서 재정의할 수 없는것을 봉인 Method(Sealed Method)라고 합니다.  <br>
-클래스에서 메서드가 가상(virtual)으로 선언되면 자식 클래스가 Method를 재정의할 수 있습니다. <br>
+클래스에서 메서드가 가상(virtual)으로 선언되면 자식 클래스가 Method를 재정의할 수 있습니다. 
 
+<br><br>
 
-
-<br>
-
-## 예제
---- 
-
+## 예시 코드
+---
 간단하게 아래와 같이 sealed class라고 선언 후 작성하는 방식입니다.
 
 ```c#
@@ -59,7 +58,6 @@ sealed class SealedClass
 }
 ```
 <br>
-
 
 ```c#
 sealed class Rectangle
@@ -88,10 +86,6 @@ class Program
     }
 }
 ```
-<br>
+<br><br>
 
-
-
-
-<br>
 [Top](#){: .btn .btn--primary }{: .align-right}

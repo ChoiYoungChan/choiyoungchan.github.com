@@ -1,5 +1,5 @@
 ---
-title:  "[C#] Dictionary란"
+title:  "[C#] C#에서 Dictionary사용법과 설명 완벽 정리 (C# 예시 코드 포함)"
 excerpt: C# 에서 사용하는 Dictionary란
 
 categories:
@@ -14,16 +14,15 @@ date: 2022-12-10
 last_modified_at: 2022-12-10
 ---
 
-## 개요
-Dictionary란? <br>
-
+## Dictionary란?
 --- 
-=> Key와 Value 세트로 다루는 연관 배열로 인덱스 번호 대신 Key라는 값을 이용하여 Value라는 값을 취득하는 형식입니다. (Key는 중복 사용 불가)<br>
+Key와 Value 세트로 다루는 연관 배열로 인덱스 번호 대신 Key라는 값을 이용하여 Value라는 값을 취득하는 형식입니다. (Key는 중복 사용 불가)<br>
 
 List와 비슷하지만 다른점이라면 List는 인덱스 번호로 요소의 값을 취득하는데 비해<br>
 Dictionary는 상기와 같이 Key값을 이용하여 Value를 취득하므로 숫자, 문자열을 키로 지정하여 세트의 값을 취득하여 사용할 수 있습니다.<br>
 따라서 항목과 값이 세트 데이터로서 다루어질 필요가 있을 경우 Dictionary 형을 이용합니다.
 <br><br>
+
 
 ## 예제
 --- 
@@ -183,9 +182,6 @@ searching Key
 searching Value
 Dog is already exist
 ```
-<br>
+<br><br>
 
-
-
-<br>
 [Top](#){: .btn .btn--primary }{: .align-right}

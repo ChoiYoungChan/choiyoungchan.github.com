@@ -73,10 +73,6 @@ _clearText.text = string.Format(_formatText, clearStageCount, allStageCount);
 결과<br>
 
 ![string_format_01](https://github.com/ChoiYoungChan/choiyoungchan.github.com/assets/40765022/edbb8592-7214-498e-a9d2-6495cc96037a)
-<br>
+<br><br>
 
-
-
-
-<br>
 [Top](#){: .btn .btn--primary }{: .align-right}
