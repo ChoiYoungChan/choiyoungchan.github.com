@@ -1,5 +1,5 @@
 ---
-title:  "[Git] 깃 명령어 Git Command"
+title:  "[Git] 깃 명령어 Git Command 정리"
 excerpt: Git 명령어 정리
 
 categories:

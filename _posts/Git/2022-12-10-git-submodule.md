@@ -1,5 +1,5 @@
 ---
-title:  "[Git] git submodule에 관하여"
+title:  "[Git] Git에서 하위 디렉토리로 포함시키는 방법에 관하여"
 excerpt: git submodule에 관하여
 
 categories:
