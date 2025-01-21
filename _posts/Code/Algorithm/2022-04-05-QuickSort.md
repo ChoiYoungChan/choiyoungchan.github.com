@@ -1,5 +1,5 @@
 ---
-title:  "[Sort] QuickSort"
+title:  "유니티에서 사용하는 퀵 정렬(QuickSort) 핵심 정리"
 excerpt: Unity에서 사용하는 퀵정렬(QuickSort)
 
 categories:

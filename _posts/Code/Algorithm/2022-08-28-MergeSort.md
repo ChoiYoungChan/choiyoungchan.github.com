@@ -1,5 +1,5 @@
 ---
-title:  "[Sort] MergeSort"
+title:  "유니티에서 사용하는 합병 정렬(MergeSort) 핵심 정리"
 excerpt: Unity에서 사용하는 합병 정렬(MergeSort)
 
 categories:

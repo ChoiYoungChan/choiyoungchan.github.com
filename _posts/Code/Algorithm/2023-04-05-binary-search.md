@@ -1,5 +1,5 @@
 ---
-title:  "[Algorithm] 이진 탐색(Binary Search)"
+title:  "[Algorithm] 이진 탐색(Binary Search)쉽게 배우기 (C++ 코드 예제 포함)"
 excerpt: 이진 탐색(Binary Search)
 
 categories:

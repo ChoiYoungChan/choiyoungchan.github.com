@@ -1,5 +1,5 @@
 ---
-title:  "[Sort] SelectSort"
+title:  "유니티에서 사용하는 선택 정렬(SelectSort) 핵심 정리"
 excerpt: Unity에서 사용하는 선택 정렬(SelectSort)
 
 categories:
