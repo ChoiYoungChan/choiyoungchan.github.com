@@ -1,5 +1,5 @@
 ---
-title:  "[AI] 인공지능(AI) 모델 개발 순서"
+title:  "[AI] 인공지능(AI) 모델 개발 순서 정리"
 excerpt: AI Model Development Sequence
 
 categories:

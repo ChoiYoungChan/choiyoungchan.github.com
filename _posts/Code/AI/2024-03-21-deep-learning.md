@@ -1,5 +1,5 @@
 ---
-title:  "[AI] 딥 러닝(Deep Learning)"
+title:  "[AI] 딥 러닝(Deep Learning)핵심 정리"
 excerpt: Deep Learning
 
 categories:

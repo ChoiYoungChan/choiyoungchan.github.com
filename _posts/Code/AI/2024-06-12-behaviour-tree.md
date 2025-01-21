@@ -1,5 +1,5 @@
 ---
-title:  "[AI] 행동 트리를 이용한 AI 개발"
+title:  "[AI] 행동 트리(Behaviour Tree)를 이용한 AI 개발"
 excerpt: AI using Behaviour Tree
 
 categories:

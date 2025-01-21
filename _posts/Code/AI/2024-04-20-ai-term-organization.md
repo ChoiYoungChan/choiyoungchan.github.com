@@ -1,5 +1,5 @@
 ---
-title:  "[AI] AI 용어 정리"
+title:  "[AI] AI 용어 정리집"
 excerpt: AI Terminology Organization
 
 categories:

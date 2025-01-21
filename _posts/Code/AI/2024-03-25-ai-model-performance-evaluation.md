@@ -1,5 +1,5 @@
 ---
-title:  "[AI] AI 모델 성능 평가"
+title:  "[AI] AI 모델 성능 평가와 단계별 간략 설명"
 excerpt: AI Model Performance Evaluation
 
 categories:
