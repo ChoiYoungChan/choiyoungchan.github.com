@@ -1,6 +1,6 @@
 ---
-title:  "[Algorithm] 백 트래킹(Backtracking)"
-excerpt: Backtracking
+title:  "[Algorithm] 백 트래킹(Backtracking)쉽게 배우기 (C++ 코드 예제 포함)"
+excerpt: 백 트래킹(Backtracking)
 
 categories:
   - Algorithm
