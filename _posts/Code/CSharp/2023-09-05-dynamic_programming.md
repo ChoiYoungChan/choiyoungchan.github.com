@@ -1,5 +1,5 @@
 ---
-title:  "[C#] Dynamic Programming(다이내믹 프로그래밍) 사용법과 설명 완벽 정리 (C# 예시 코드 포함)"
+title:  "[C#] C#에서 Dynamic Programming(다이내믹 프로그래밍) 사용법과 설명 완벽 정리 (C# 예시 코드 포함)"
 excerpt: C# 에서 사용하는 Dynamic Programming
 
 categories:

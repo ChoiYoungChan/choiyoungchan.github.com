@@ -1,5 +1,5 @@
 ---
-title:  "[C#] string 포맷"
+title:  "[C#] C#에서 string 포맷(String Format) 사용법과 설명 완벽 정리 (C# 예시 코드 포함)"
 excerpt: string format in C#
 
 categories:
