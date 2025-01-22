@@ -1,5 +1,5 @@
 ---
-title:  "[C++] 3항연산자란"
+title:  "[C++] C++에서 3항연산자(ternary operator) 기본 개념 및 사용법 정리(C++ 코드 포함)"
 excerpt: ternary operator
 
 categories:
