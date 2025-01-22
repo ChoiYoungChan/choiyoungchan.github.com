@@ -1,5 +1,5 @@
 ---
-title:  "[Design Pattern] 플라이웨이트(Flyweight) 패턴"
+title: "[Design Pattern] 플라이웨이트 패턴(Flyweight Pattern)의 기본 개념 정리 (C++ 샘플코드 포함)"
 excerpt: Finite State Machine Pattern
 
 categories:

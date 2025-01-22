@@ -1,5 +1,5 @@
 ---
-title:  "[Design Pattern] 데코레이터 패턴"
+title: "[Design Pattern] 데코레이터 패턴(Decorator Pattern)의 기본 개념 정리 (C++ 샘플코드 포함)"
 excerpt: Decorator Pattern이란
 
 categories:

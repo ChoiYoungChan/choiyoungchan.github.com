@@ -1,5 +1,5 @@
 ---
-title:  "[Design Pattern] 프로토타입(Prototype) 패턴"
+title: "[Design Pattern] 프로토타입 패턴(Prototype Pattern)의 기본 개념 정리 (C++ 샘플코드 포함)"
 excerpt: Prototype Pattern
 
 categories:

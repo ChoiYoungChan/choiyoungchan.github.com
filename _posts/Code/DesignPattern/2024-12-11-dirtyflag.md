@@ -1,5 +1,5 @@
 ---
-title:  "[Design Pattern] 더티플래그(DirtyFlag) 패턴"
+title: "[Design Pattern] 더티플래그 패턴(DirtyFlag Pattern)의 기본 개념 정리 (C++ 샘플코드 포함)"
 excerpt: DirtyFlag Pattern
 
 categories:
