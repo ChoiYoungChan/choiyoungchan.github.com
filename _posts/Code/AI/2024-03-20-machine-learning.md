@@ -1,5 +1,5 @@
 ---
-title:  "[AI] 머신러닝(Machine Learning) 핵심 정리"
+title: "[AI] 머신러닝(Machine Learning) 핵심 정리"
 excerpt: Machine Learning
 
 categories:

@@ -1,5 +1,5 @@
 ---
-title:  "[AI] 나이브 베이즈 분류기(Naive Bayes Classifier)의 기본 개념 정리 (Python 샘플코드 포함)"
+title: "[AI] 나이브 베이즈 분류기(Naive Bayes Classifier)의 기본 개념 정리 (Python 샘플코드 포함)"
 excerpt: Naive Bayes Classifier
 
 categories:

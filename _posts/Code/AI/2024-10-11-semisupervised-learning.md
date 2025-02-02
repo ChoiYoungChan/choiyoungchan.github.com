@@ -1,5 +1,5 @@
 ---
-title:  "[AI] 준지도 학습(Semi-Supervised Learning)의 기본 개념 정리(Python 샘플코드 포함)"
+title: "[AI] 준지도 학습(Semi-Supervised Learning)의 기본 개념 정리(Python 샘플코드 포함)"
 excerpt: Semisupervised Learning
 
 categories:

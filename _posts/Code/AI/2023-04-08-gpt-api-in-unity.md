@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티에서 GPT API 활용하기"
+title: "[Unity] 유니티에서 GPT API 활용하기"
 excerpt: 유니티에서 Gpt Api사용하기
 
 categories:
