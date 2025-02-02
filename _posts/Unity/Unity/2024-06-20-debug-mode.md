@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 인스펙터 디버그 모드(Inspector Debug Mode)"
+title:  "[Unity] 유니티 인스펙터 디버그 모드(Inspector Debug Mode)로 디버깅 하기"
 excerpt: Unity Debug Mode
 
 categories:

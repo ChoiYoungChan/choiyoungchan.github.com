@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티에서 JSON 사용하기"
+title:  "[Unity] 유니티에서 JSON을 사용해서 데이터 읽고 쓰기"
 excerpt: Using JSON in Unity
 
 categories:

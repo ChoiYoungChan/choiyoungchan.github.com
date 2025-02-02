@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 텍스트 크기 자동조정"
+title:  "[Unity] 유니티 텍스트 크기 자동조정 하는 방법에 관하여"
 excerpt: Unity text size bestfit
 
 categories:

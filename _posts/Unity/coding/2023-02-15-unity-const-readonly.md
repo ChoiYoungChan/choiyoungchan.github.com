@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 const readonly차이점과 특징"
+title:  "[Unity] 유니티에서 const와 readonly의 차이점과 특징"
 excerpt: difference between const and readonly in Unity
 
 categories:

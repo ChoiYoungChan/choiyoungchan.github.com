@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티에서 NonSerialized"
+title:  "[Unity] 유니티에서 NonSerialized의 기본 개념과 사용법"
 excerpt: NonSerialized in Unity
 
 categories:

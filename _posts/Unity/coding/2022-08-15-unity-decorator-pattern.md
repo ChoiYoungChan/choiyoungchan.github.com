@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티에서 사용하는 장식자 패턴"
+title:  "[Unity] 유니티에서 사용하는 장식자 패턴(Decorator Pattern)"
 excerpt: Decorator Pattern in Unity
 
 categories:

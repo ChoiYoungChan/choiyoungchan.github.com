@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티에서 사용하는 관찰자 패턴"
+title:  "[Unity] 유니티에서 사용하는 관찰자 패턴(Observer Pattern)"
 excerpt: Observer Pattern in Unity
 
 categories:

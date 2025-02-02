@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 PlayerPref 데이터 저장 및 사용"
+title:  "[Unity] 유니티 PlayerPref를 이용해 데이터 저장 및 사용하는 방법"
 excerpt: playerpref in Unity
 
 categories:

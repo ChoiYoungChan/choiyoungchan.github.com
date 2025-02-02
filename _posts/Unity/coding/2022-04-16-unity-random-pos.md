@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] Unity에서 랜덤 좌표에 생성 및 좌표 이동"
+title:  "[Unity] Unity에서 랜덤(Random) 좌표에 생성(Instantiate) 및 좌표 이동"
 excerpt: GameObject Random Instantiate in Unity
 
 categories:

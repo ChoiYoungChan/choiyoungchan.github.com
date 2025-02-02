@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 델리게이트"
+title:  "[Unity] 유니티에서 델리게이트(Delegate) 사용하는 방법 총정리"
 excerpt: delegate in Unity
 
 categories:
