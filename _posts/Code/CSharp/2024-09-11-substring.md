@@ -1,6 +1,6 @@
 ---
-title:  "[C#] C#의 Substring사용법과 설명 완벽 정리 (C# 예시 코드 포함)"
-excerpt: Attribute : Substring
+title: "[C#] C#의 Substring사용법과 설명 완벽 정리 (C# 예시 코드 포함)"
+excerpt: Substring
 
 categories:
   - C Sharp

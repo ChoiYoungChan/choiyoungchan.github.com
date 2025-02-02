@@ -1,6 +1,6 @@
 ---
 title:  "[C#] 더 이상 사용하지 않거나 그럴 예정인 코드에 대해서(Attribute:Obsolete)"
-excerpt: Attribute : Obsolete
+excerpt: Obsolete
 
 categories:
   - C Sharp
