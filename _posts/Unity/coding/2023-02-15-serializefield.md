@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티에서 SerializeField"
+title:  "[Unity] 유니티에서 SerializeField의 기본 개념과 사용법"
 excerpt: SerializeField in Unity
 
 categories:

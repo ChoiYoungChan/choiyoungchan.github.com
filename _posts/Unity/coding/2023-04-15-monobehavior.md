@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티에서 Monobehavior"
+title:  "[Unity] 유니티에서 Monobehavior의 기본 개념과 사용법"
 excerpt: Monobehavior in Unity
 
 categories:
@@ -75,4 +75,5 @@ public class PlayerController : MonoBehaviour
 <br><br>
 
 <br>
+
 [Top](#){: .btn .btn--primary }{: .align-right}

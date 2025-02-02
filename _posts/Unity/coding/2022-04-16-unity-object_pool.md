@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 오브젝트 풀"
+title:  "[Unity] 유니티에서 오브젝트 풀(Object Pool) 사용하는 방법과 기본 개념 정리"
 excerpt: Unity Object Pool
 
 categories:
@@ -14,7 +14,7 @@ date: 2022-08-13
 last_modified_at: 2022-08-13
 ---
 
-## *개요*
+## 오브젝트 풀(Object Pool) 개념
 그냥 생성 -> 삭제라는 형식을 사용할 경우 아래의 2가지 문제점이 발생 하기 때문에 이를 해소 하기 위해 미리 생성을 해서 'Pool'에 저장하여 메모리를 확보 후 이것을 먼저 사용, 사용후에 'Pool'에 반환하는 형식입니다.
 
 * 메모리의 파편화(메모리는 존재하지만 할당이 불가능한 상태)
@@ -29,6 +29,7 @@ last_modified_at: 2022-08-13
 1. 풀 생성 및 사용과 반환 함수 작성
 2. 초기에 일정 갯수만큼 생성하여 풀에 저장
 3. 풀에서 꺼내오고 반환하기
+
 
 #### 코드
 ---
@@ -329,4 +330,5 @@ public class Bullet : MonoBehaviour
 ```
 
 <br>
+
 [Top](#){: .btn .btn--primary }{: .align-right}

@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 Resources 로드하기"
+title:  "[Unity] 유니티 데이터 또는 리소스(Resources) 로드하기"
 excerpt: Unity Load Resources
 
 categories:

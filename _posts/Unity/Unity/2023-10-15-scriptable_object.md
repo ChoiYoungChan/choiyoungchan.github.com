@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 ScriptableObject"
+title:  "[Unity] 유니티에서 스크립터블오브젝트(ScriptableObject) 개념 및 사용하는 방법 정리"
 excerpt: Unity ScriptableObject
 
 categories:
@@ -14,7 +14,7 @@ date: 2023-10-15
 last_modified_at: 2023-10-15
 ---
 
-## ScriptableObject 개념
+## 스크립터블오브젝트(ScriptableObject) 개념
 ---
 ScriptableObject는 유니티에서 제공하는 컨테이너로 게임에서 사용되는 데이터를 저장하고 재사용하기 위한 강력한 도구입니다. <br>
 게임 오브젝트에 직접 연결되지 않고, 에셋으로서 프로젝트 내에서 관리되며, Inspector 창에서 직관적으로 편집할 수 있습니다.

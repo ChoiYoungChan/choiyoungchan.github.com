@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 코루틴에 대하여"
+title:  "[Unity] 코루틴(Coroutine)에 대하여"
 excerpt: Coroutine in Unity
 
 categories:
