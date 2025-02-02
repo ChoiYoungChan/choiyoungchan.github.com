@@ -14,7 +14,7 @@ date: 2024-05-02
 last_modified_at: 2024-05-02
 ---
 
-## 다원 탐색 트리 란?
+## 다원 탐색 트리(Multiway Search Tree) 란?
 ---
 다원 탐색 트리(Multiway Search Tree) 또는 m-원 탐색 트리(m-way search tree)는 다음과 같은 특징을 갖는 트리입니다.<br>
 

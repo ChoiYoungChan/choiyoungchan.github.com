@@ -20,7 +20,8 @@ last_modified_at: 2023-01-28
 비동기(asynchronous) : 작업을 요청한 후 작업이 완료되기를 기다리지 않고 다른 작업을 수행할 수 있는 방식입니다. 작업의 완료는 콜백 함수, 이벤트, 또는 Future/Promise와 같은 메커니즘을 통해 통지됩니다. 마치 여러 사람이 각자 다른 일을 처리하는 것처럼, 한 사람이 다른 사람의 작업이 끝날 때까지 기다릴 필요가 없습니다.
 
 <br>
-C#에서 동기 비동기 [->](https://choiyoungchan.github.io/c%20sharp/synchronous-asynchronous/)
+
+C#에서 동기 비동기 -> (https://choiyoungchan.github.io/c%20sharp/synchronous-asynchronous/)
 <br><br>
 
 

@@ -22,7 +22,7 @@ last_modified_at: 2022-02-13
 
 ![UML_class_diagram](https://user-images.githubusercontent.com/40765022/153752435-cadf59ac-f5d0-4a7e-848b-f9edf16daa7c.png)
 
-##### (이미지 출처 : https://en.wikipedia.org/wiki/Decorator_pattern) <br> <br>
+(출처 : https://en.wikipedia.org/wiki/Decorator_pattern) <br><br>
 
 ### 구성요소
 ---
