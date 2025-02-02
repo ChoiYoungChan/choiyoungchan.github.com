@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 컬러코드Color Code(Hex code)"
+title:  "[Unity] 유니티 컬러코드Color Code(Hex code)로 텍스트 색상 바꾸는 방법"
 excerpt: Color code in Unity Script
 
 categories:
