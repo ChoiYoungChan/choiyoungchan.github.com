@@ -40,10 +40,6 @@ Unity에서 코루틴은 주로 시간 지연, 애니메이션, 비동기 작업
 
 ### yield 문의 종류
 ---
-* 
-
-## 주의점
----
 코루틴에서 사용되는 주요 yield 문은 다음과 같습니다.
 
 * ```yield return null;```: 다음 프레임까지 대기합니다. 가장 일반적으로 사용되는 yield 문입니다.
@@ -53,7 +49,7 @@ Unity에서 코루틴은 주로 시간 지연, 애니메이션, 비동기 작업
 * ```yield return new WaitWhile(Func<bool> predicate);```: 특정 조건이 거짓이 될 때까지 대기합니다.
 * ```yield return StartCoroutine(Coroutine);```: 다른 코루틴이 완료될 때까지 대기합니다.
 
-<br><br>
+<br>
 
 ### 장단점
 ---
