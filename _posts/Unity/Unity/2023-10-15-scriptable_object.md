@@ -20,17 +20,17 @@ ScriptableObject는 유니티에서 제공하는 컨테이너로 게임에서 �
 게임 오브젝트에 직접 연결되지 않고, 에셋으로서 프로젝트 내에서 관리되며, Inspector 창에서 직관적으로 편집할 수 있습니다.
 (간단하게, 스크립팅이 가능한 리소스 Object라고 생각하시면 됩니다.)
 
-[유니티 공식 홈페이지](https://docs.unity3d.com/kr/2022.3/Manual/class-ScriptableObject.html)<br>
+[유니티 공식 홈페이지](https://docs.unity3d.com/kr/2022.3/Manual/class-ScriptableObject.html)<br><br>
 
 ### 특징
 * 데이터 저장: 게임 설정, 레벨 디자인, 아이템 정보 등 다양한 종류의 데이터를 저장할 수 있습니다.
 * 재사용성: 여러 스크립트에서 동일한 데이터를 공유할 수 있어 코드의 재사용성을 높입니다.
 * 에셋: 프로젝트 외부에서도 편집 가능하며, 버전 관리 시스템과의 연동이 용이합니다.
 * 인스펙터 편집: Inspector 창에서 직관적인 UI를 통해 데이터를 편집할 수 있습니다.
-
+<br><br>
 
 ### 장단점
-
+---
 #### 장점
 * 데이터 관리: 게임 데이터를 중앙 집중화하여 관리하기 쉽습니다.
 * 재사용성: 여러 스크립트에서 동일한 데이터를 공유할 수 있습니다.
@@ -40,12 +40,31 @@ ScriptableObject는 유니티에서 제공하는 컨테이너로 게임에서 �
 #### 단점
 * 성능: 많은 수의 ScriptableObject를 사용할 경우 메모리 사용량이 증가할 수 있습니다.
 * 복잡성: 복잡한 데이터 구조를 표현하기 위해서는 추가적인 노력이 필요할 수 있습니다.
+<br><br>
 
-
+### 스크립터블오브젝트(ScriptableObject)와 PlayerPrefab의 차이점
 ---
+<br>
+
+![Image](https://github.com/user-attachments/assets/b40c4856-6a7c-45ed-b9c9-33f3183ea0ad)
+<br><br>
+
+
+### 스크립터블오브젝트(ScriptableObject)와 PlayerPrefab의 활용 예시
+---
+* 스크립터블 오브젝트
+  * 캐릭터 능력치 데이터를 스크립터블 오브젝트로 저장하여 여러 캐릭터가 공유하도록 설정
+  * 아이템 정보를 스크립터블 오브젝트로 저장하여 아이템 목록을 관리하고 게임에 적용
+  * 레벨 디자인 데이터를 스크립터블 오브젝트로 저장하여 레벨을 구성하고 게임에 적용
+
+* Player Prefab:
+  * 플레이어 캐릭터를 Player Prefab으로 저장하여 게임 시작 시마다 플레이어 캐릭터 생성
+  * 적 캐릭터를 Player Prefab으로 저장하여 다양한 적 캐릭터를 쉽게 생성하고 배치
+  * 게임 오브젝트를 Player Prefab으로 저장하여 게임 월드를 구성하고 관리
+<br><br>
+
 ## 생성 방법
 ---
-
 1. ScriptableObject 상속
    * 새로운 C# 스크립트를 생성하고, ScriptableObject 클래스를 상속합니다.
    * CreateAssetMenu 속성을 사용하여 Asset 메뉴에서 생성할 수 있도록 설정합니다.
