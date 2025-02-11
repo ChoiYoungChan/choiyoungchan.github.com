@@ -21,22 +21,22 @@ last_modified_at: 2023-09-23
 연결리스트를 응용해서 트리 또는 그래프 자료구조를 구현 하는것도 가능하며, 동적 메모리 할당이나 메모리 관리 등 사용하는 부분이 많으니 반드시 익혀야할 기본적인 자료구조입니다. <br>
 
 물론 List<T>, LinkedList<T>는 C#에서 컬렉션으로 제공하고 있습니다.<br>
-하지만, 직접 만들어 보는게 많은 도움이 되기 때문에 직접 구현하는 방식으로 예제 코드를 작성, 이후 C#에서 제공하는 LinkedList<T>를 사용하는 것을 보여 드리겠습니다. <br>
+하지만, 직접 만들어 보는게 많은 도움이 되기 때문에 직접 구현하는 방식으로 예제 코드를 작성, 이후 C#에서 제공하는 LinkedList<T>를 사용하는 것을 보여 드리겠습니다. 
+<br><br>
 
 ## 사용하는 이유(용도)
 ---
 - 동적 메모리 할당. 연결 리스트는 동적으로 데이터를 추가하거나 삭제할 수 있어 메모리를 효율적으로 활용합니다.
 - 삽입과 삭제의 효율성. 중간에 데이터를 추가하거나 삭제할 때 배열과 달리 데이터를 이동시킬 필요가 없어 연결 리스트가 유용합니다.
 - 메모리 관리. 배열은 크기가 고정되지만 연결 리스트는 동적으로 크기가 조절 가능합니다.
-
-
+<br><br>
 
 ## 문제점&주의사항
 ---
 - 검색 속도: 특정 위치에 직접 접근할 수 없어 검색 작업이 느립니다. 검색에는 순차 접근이 필요합니다
 - 메모리 오버헤드: 각 노드는 포인터를 가지고 있어 메모리 사용량이 늘어날 수 있습니다.
 - 연결 끊김 문제: 올바르게 노드를 연결하지 않으면 데이터가 손실될 수 있습니다.
-
+<br><br>
 
 ### 예제
 ---
@@ -234,7 +234,79 @@ class DoubleLinkedListSample
 원형 연결리스트(Circular Linked List) <br>
 상기의 이중 연결리스트에서 마지막 노드를 처음 노드에 연결시키는 방식의 연결리스트 입니다. <br>
 ```C#
+using System;
 
+public class Node<T>
+{
+    public T Data { get; set; }
+    public Node<T> Next { get; set; }
+
+    public Node(T data)
+    {
+        Data = data;
+        Next = null;
+    }
+}
+
+public class CircularLinkedList<T>
+{
+    private Node<T> head;
+
+    public CircularLinkedList()
+    {
+        head = null;
+    }
+
+    public void Add(T data)
+    {
+        Node<T> newNode = new Node<T>(data);
+
+        if (head == null)
+        {
+            head = newNode;
+            newNode.Next = head; // 자기 자신을 가리키도록 설정
+        }
+        else
+        {
+            Node<T> current = head;
+            while (current.Next != head)
+            {
+                current = current.Next;
+            }
+            current.Next = newNode;
+            newNode.Next = head;
+        }
+    }
+
+    public void PrintAll()
+    {
+        if (head == null)
+        {
+            return;
+        }
+
+        Node<T> current = head;
+        do
+        {
+            Console.Write(current.Data + " ");
+            current = current.Next;
+        } while (current != head);
+        Console.WriteLine();
+    }
+}
+
+public class Example
+{
+    public static void Main(string[] args)
+    {
+        CircularLinkedList<int> list = new CircularLinkedList<int>();
+        list.Add(1);
+        list.Add(2);
+        list.Add(3);
+
+        list.PrintAll(); // 1 2 3 출력
+    }
+}
 ```
 <br>
 
@@ -379,6 +451,4 @@ class Program
 ```
 <br>
 
-
-<br>
 [Top](#){: .btn .btn--primary }{: .align-right}
