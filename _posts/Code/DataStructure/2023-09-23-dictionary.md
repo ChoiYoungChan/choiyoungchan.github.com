@@ -16,39 +16,52 @@ last_modified_at: 2023-09-23
 
 ## Dictionary 란?
 ---
-해시맵과 동일하게 키-값 쌍으로 데이터를 저장하는 비선형 자료구조이며, ‘키’를 이용하여 데이터를 빠르게 검색할 수 있습니다. <br>
-Hash Map과 동일하게 기본적인 자료구조로서 키를 사용하고 키와 값의 타입에 제한이 없으며 동기화 되지 않는다는 공통점이 있습니다. <br> <br>
-다만, Hash Map이 Dictionary보다 빠르고 Dictionary는 C# 8.0 이상 부터 사용 가능하고 Hash Map은 그 이전버전 까지만 사용 가능하다는 점 입니다. <br>
-그냥 한마디로 정의하자면, Dictionary는 Hash Map의 후속버전이라 생각하시면 편합니다.
+Dictionary는 **키(Key)**와 값(Value) 쌍으로 데이터를 저장하는 비선형 자료구조입니다. 마치 사전처럼, 키를 이용하여 원하는 값을 빠르게 검색할 수 있습니다. Dictionary는 다음과 같은 특징을 가지고 있습니다.
+
+* 키-값 쌍: 데이터가 키와 값의 형태로 저장됩니다. 키는 데이터를 식별하는 고유한 값이며, 값은 키에 해당하는 데이터입니다. 마치 이름표와 내용물처럼, 키는 값을 찾기 위한 열쇠 역할을 합니다.
+* 빠른 검색: 키를 이용하여 O(1)의 시간 복잡도로 데이터에 빠르게 접근할 수 있습니다. 마치 책갈피를 이용하여 원하는 페이지를 바로 펼치는 것처럼, Dictionary는 키를 통해 원하는 값에 즉시 접근할 수 있습니다.
+* 유연한 자료형: 키와 값은 다양한 자료형(정수, 문자열, 리스트, 딕셔너리 등)을 사용할 수 있습니다. 마치 다양한 종류의 재료로 요리하는 것처럼, Dictionary는 다양한 형태의 데이터를 담을 수 있습니다.
+* 순서 없음 (Python 3.7+): Python 3.7 이상에서는 Dictionary의 요소들이 삽입 순서를 유지합니다. 하지만, 이전 버전에서는 순서가 보장되지 않았습니다.
 
 
 ### 해시맵(Hash Map)과 차이점
-
-1. 버전
-   - Dictionary : C# 8.0 이상 부터 사용 가능
-   - Hash Map   : C# 8.0 이전 까지 사용 가능
-
-2. 속도
-   - Dictionary : Hash Map보다 느림
-   - Hash Map   : Dictionary보다 빠름
-
+---
 <br>
 
-[Hash Map 포스트]()<br><br>
+![Image](https://github.com/user-attachments/assets/558ce886-741b-447b-9df6-6b87152dacdd)
+<br><br>
 
+[Hash Map 포스트](https://choiyoungchan.github.io/data%20structure/hashmap/)<br><br>
 
-
-## 사용하는 이유
+### 장점단점
 ---
-- 키를 이용하여 데이터를 빠르게 검색할 수 있습니다.
-- 데이터의 저장 및 검색이 효율적입니다.
-- 데이터의 중복을 허용하지 않습니다.
+#### 장점
+* 빠른 데이터 검색: 키를 사용하여 O(1)의 시간 복잡도로 데이터에 빠르게 접근할 수 있습니다. 마치 주소록에서 이름을 검색하여 전화번호를 바로 찾는 것처럼, Dictionary는 빠른 데이터 검색을 지원합니다.
+* 유연한 자료형: 키와 값으로 다양한 자료형을 사용할 수 있어 다양한 데이터를 효율적으로 관리할 수 있습니다. 마치 백화점의 다양한 상품처럼, Dictionary는 여러 종류의 데이터를 담을 수 있습니다.
+* 간단한 사용법: 직관적인 API를 제공하여 쉽게 데이터를 저장하고 검색할 수 있습니다. 마치 레시피를 따라 요리하는 것처럼, Dictionary는 사용하기 간편합니다.
+
+#### 단점
+* 메모리 사용: 데이터를 키-값 쌍으로 저장하므로 배열에 비해 메모리 사용량이 많을 수 있습니다. 마치 큰 방에 가구를 배치하는 것처럼, Dictionary는 배열보다 메모리 공간을 더 사용할 수 있습니다.
+* 해시 충돌 가능성: 키의 범위가 넓을 경우 해시 충돌이 발생하여 검색 성능이 저하될 수 있습니다. 마치 도로가 막히는 것처럼, Dictionary는 해시 충돌로 인해 검색 속도가 느려질 수 있습니다.
+* 순서 없음 (Python 3.7 이전): Python 3.7 이전 버전에서는 데이터의 삽입 순서가 보장되지 않아 순서가 중요한 경우 다른 자료구조를 사용해야 합니다.
+
+
+## Dictionary의 활용 분야
+---
+Dictionary는 다양한 분야에서 활용됩니다.
+* 데이터베이스: 데이터베이스의 레코드를 Dictionary 형태로 표현하여 관리합니다.
+* 웹 개발: 웹 페이지의 요청과 응답 데이터를 Dictionary 형태로 처리합니다.
+* 게임 개발: 게임 캐릭터의 속성, 아이템 정보 등을 Dictionary 형태로 관리합니다.
+* 자연어 처리: 단어와 빈도수를 Dictionary 형태로 저장하여 분석합니다.
 
 
 ## 문제점&주의사항
 ---
-- 키의 범위가 넓을 경우 해시 충돌이 발생할 수 있습니다.
-- 해시 충돌을 해결하기 위해 별도의 자료구조를 사용해야 할 수 있습니다.
+* 키의 유일성: Dictionary의 키는 유일해야 합니다. 중복된 키를 사용하면 값이 덮어씌워지거나 오류가 발생할 수 있습니다. 마치 주민등록번호처럼, 키는 데이터를 식별하는 고유한 값이어야 합니다.
+
+* 해시 충돌: 키의 범위가 넓을 경우 해시 충돌이 발생하여 검색 성능이 저하될 수 있습니다. 이 경우 해시 충돌을 해결하기 위한 별도의 자료구조(예: 연결 리스트)를 사용해야 할 수 있습니다. 마치 교통 체증을 해결하기 위해 우회로를 만드는 것처럼, Dictionary는 해시 충돌에 대비해야 합니다.
+
+* 메모리 관리: Dictionary는 배열에 비해 메모리 사용량이 많을 수 있으므로 메모리 관리에 주의해야 합니다. 더 이상 사용하지 않는 Dictionary는 메모리에서 해제하여 메모리 누수를 방지해야 합니다. 마치 사용한 컵을 깨끗이 씻는 것처럼, Dictionary를 사용 후에는 메모리를 정리해야 합니다.
 
 
 ## 예제
@@ -58,27 +71,40 @@ Hash Map과 동일하게 기본적인 자료구조로서 키를 사용하고 키
 using System;
 using System.Collections.Generic;
 
-class Dictionary
+class DictionarySample
 {
     static void Main(string[] args)
     {
-        Dictionary<string, int> _dictionary = new Dictionary<string, int>();
+        // 1. 딕셔너리 생성
+        Dictionary<string, int> myDict = new Dictionary<string, int>();
 
-        // Dictionary에 데이터를 추가합니다.
-        _dictionary.Add("pen", 1);
-        _dictionary.Add("eraser", 2);
-        _dictionary.Add("sharp pencil", 3);
+        // 2. 데이터 추가
+        myDict.Add("Alice", 30);
+        myDict.Add("Bob", 25);
+        myDict.Add("Charlie", 35);
 
-        // Dictionary에서 데이터를 검색합니다.
-        int value = _dictionary["pen"];
-        Console.WriteLine(value);
+        // 3. 데이터 접근
+        Console.WriteLine(myDict["Alice"]); // 30 출력
+        Console.WriteLine(myDict.ContainsKey("Bob")); // True 출력
+        Console.WriteLine(myDict.ContainsValue(25)); // True 출력
 
-        // Dictionary에서 데이터를 삭제합니다.
-        _dictionary.Remove("pen");
+        // 4. 데이터 수정
+        myDict["Alice"] = 31;
+
+        // 5. 데이터 삭제
+        myDict.Remove("Charlie");
+
+        // 6. 딕셔너리 순회
+        foreach (KeyValuePair<string, int> pair in myDict)
+        {
+            Console.WriteLine($"{pair.Key}: {pair.Value}");
+        }
+
+        // 7. 딕셔너리 길이
+        Console.WriteLine(myDict.Count); // 2 출력
     }
 }
 ```
-
 <br>
 
 [Top](#){: .btn .btn--primary }{: .align-right}
