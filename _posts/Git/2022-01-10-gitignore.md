@@ -69,7 +69,6 @@ $ git commit -m "commit message"
 $ git push
 ```
 
----
-
 <br>
+
 [Top](#){: .btn .btn--primary }{: .align-right}

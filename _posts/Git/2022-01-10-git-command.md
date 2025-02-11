@@ -159,9 +159,6 @@ $ git branch -a
 - 모든 Branch 확인 <br>
  <br>
 
----
-
-
 ### 알아두면 좋은 Git 명령어 <br>
 --- 
 ---
@@ -222,4 +219,5 @@ $ git rm -f  <파일명>
 
 
 <br>
+
 [Top](#){: .btn .btn--primary }{: .align-right}
