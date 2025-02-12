@@ -1,7 +1,7 @@
 ---
 title: "Unity Error Respond"
 layout: archive
-permalink: categories/unity-error_respond
+permalink: categories/unity-error-respond
 author_profile: true
 sidebar_main: true
 ---
