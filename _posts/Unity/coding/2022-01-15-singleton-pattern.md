@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 Singleton Pattern"
+title:  "[Unity] 유니티에서 사용하는 여러가지 Singleton Pattern 방법"
 excerpt: Unity에서 사용하는 Singleton Pattern
 
 categories:
