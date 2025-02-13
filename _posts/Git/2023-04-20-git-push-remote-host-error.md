@@ -5,7 +5,7 @@ excerpt: fix git push WARNING REMOTE HOST IDENTIFICATION HAS CHANGED! error
 categories:
   - Git
 tags:
-  - [Github, Git, git REMOTE HOST errㅐr, 깃, 원격 호스트 에러]
+  - [Github, Git, git REMOTE HOST error, 깃, 원격 호스트 에러]
 
 toc: true
 toc_sticky: true
