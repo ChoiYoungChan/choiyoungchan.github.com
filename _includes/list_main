@@ -47,8 +47,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Error Respond" %}
-                        <li><a href="/categories/ue4-error-respond" class="">Error Respond ({{category[1].size}})</a></li>
+                    {% if category[0] == "Unity Error Respond" %}
+                        <li><a href="/categories/ue4-error-respond" class="">Unity Error Respond ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -72,6 +72,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "C Sharp" %}
                         <li><a href="/categories/csharp" class="">C # ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Python" %}
+                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
