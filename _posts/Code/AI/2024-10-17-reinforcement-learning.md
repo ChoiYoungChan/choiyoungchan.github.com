@@ -1,6 +1,6 @@
 ---
 title: "[AI] 강화학습(Reinforcement Learning)의 기본 개념 정리(Python 샘플코드 포함)"
-excerpt: Artificial Neural Network
+excerpt: Reinforcement Learning
 
 categories:
   - AI
