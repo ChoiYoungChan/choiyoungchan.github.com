@@ -3,7 +3,7 @@ title:  "[Unity] 머테리얼이나 오브젝트가 분홍색으로 깨질때 �
 excerpt: Responding to Material Cracking Error just like pink
 
 categories:
-  - unity-error-respond
+  - Unity Error Respond
 tags:
   - [Unity, 유니티, 머테리얼, 깨짐, 분홍색, Material, Cracking, pink]
 

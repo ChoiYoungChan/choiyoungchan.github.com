@@ -3,7 +3,7 @@ title:  "[Unity] 유니티 Tenjin SDK 중복 빌드 에러 대응하기"
 excerpt: fix duplicate-tenjinSDK build error
 
 categories:
-  - unity-error-respond
+  - Unity Error Respond
 tags:
   - [Unity, duplicate, build error, 유니티, 중복 에러, 빌드 에러, build error]
 

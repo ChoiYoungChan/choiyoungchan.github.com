@@ -3,7 +3,7 @@ title:  "[Unity] NullReferenceException이 발생하는 주요 원인 및 해결
 excerpt: Responding to NullReferenceException error
 
 categories:
-  - unity-error-respond
+  - Unity Error Respond
 tags:
   - [Unity, 유니티, NullReferenceException, 널 익셉션]
 
