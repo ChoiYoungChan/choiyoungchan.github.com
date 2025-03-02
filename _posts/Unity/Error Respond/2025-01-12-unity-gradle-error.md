@@ -1,6 +1,6 @@
 ---
 title:  "[Unity] 유니티 Gradle Error 발생 대응 총정리"
-excerpt: Responding to NullReferenceException error
+excerpt: Responding to Gradle error
 
 categories:
   - Unity Error Respond
