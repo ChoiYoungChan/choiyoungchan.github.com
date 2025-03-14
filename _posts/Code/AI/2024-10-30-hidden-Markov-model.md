@@ -45,107 +45,107 @@ HMM은 다음과 같은 요소들로 구성됩니다.
 
 1. 평가 (Evaluation): 주어진 HMM 파라미터(상태 전이 확률, 방출 확률, 초기 상태 확률)와 관측값 시퀀스가 주어졌을 때, 해당 관측값 시퀀스가 발생할 확률을 계산하는 문제입니다. Forward 알고리즘은 이 확률을 효율적으로 계산하는 방법입니다.<br>
 
-```python
-import numpy as np
-from hmmlearn import hmm
+    ```python
+    import numpy as np
+    from hmmlearn import hmm
 
-# HMM 파라미터 설정
-n_states = 2  # 상태 개수 (예: 더움, 추움)
-n_observations = 3  # 관측값 개수 (예: 아이스크림 적게 먹음, 보통 먹음, 많이 먹음)
+    # HMM 파라미터 설정
+    n_states = 2  # 상태 개수 (예: 더움, 추움)
+    n_observations = 3  # 관측값 개수 (예: 아이스크림 적게 먹음, 보통 먹음, 많이 먹음)
 
-start_prob = np.array([0.6, 0.4])  # 초기 상태 확률 (첫날 더울 확률 60%, 추울 확률 40%)
-trans_mat = np.array([[0.7, 0.3], [0.4, 0.6]])  # 상태 전이 확률 (더움 -> 더움 70%, 더움 -> 추움 30%, 추움 -> 더움 40%, 추움 -> 추움 60%)
-emission_prob = np.array([[0.1, 0.4, 0.5], [0.6, 0.3, 0.1]])  # 방출 확률 (더울 때 적게 10%, 보통 40%, 많이 50%, 추울 때 적게 60%, 보통 30%, 많이 10%)
+    start_prob = np.array([0.6, 0.4])  # 초기 상태 확률 (첫날 더울 확률 60%, 추울 확률 40%)
+    trans_mat = np.array([[0.7, 0.3], [0.4, 0.6]])  # 상태 전이 확률 (더움 -> 더움 70%, 더움 -> 추움 30%, 추움 -> 더움 40%, 추움 -> 추움 60%)
+    emission_prob = np.array([[0.1, 0.4, 0.5], [0.6, 0.3, 0.1]])  # 방출 확률 (더울 때 적게 10%, 보통 40%, 많이 50%, 추울 때 적게 60%, 보통 30%, 많이 10%)
 
-# HMM 모델 생성 (파라미터 직접 설정)
-model = hmm.MultinomialHMM(n_components=n_states)
-model.startprob_ = start_prob
-model.transmat_ = trans_mat
-model.emissionprob_ = emission_prob
+    # HMM 모델 생성 (파라미터 직접 설정)
+    model = hmm.MultinomialHMM(n_components=n_states)
+    model.startprob_ = start_prob
+    model.transmat_ = trans_mat
+    model.emissionprob_ = emission_prob
 
-# 관측값 시퀀스
-X = np.array([[0], [1], [2]])  # 예: [적게 먹음, 보통 먹음, 많이 먹음]
+    # 관측값 시퀀스
+    X = np.array([[0], [1], [2]])  # 예: [적게 먹음, 보통 먹음, 많이 먹음]
 
-# 관측값 시퀀스가 발생할 확률 계산 (평가)
-logprob = model.score(X)  # 로그 확률 값 반환
-probability = np.exp(logprob)  # 실제 확률 값 계산
-print(f"관측값 시퀀스 발생 확률: {probability}") # 출력 예시: 0.0483
+    # 관측값 시퀀스가 발생할 확률 계산 (평가)
+    logprob = model.score(X)  # 로그 확률 값 반환
+    probability = np.exp(logprob)  # 실제 확률 값 계산
+    print(f"관측값 시퀀스 발생 확률: {probability}") # 출력 예시: 0.0483
 
-# 여러개의 관측값 시퀀스에 대한 확률 계산 (score_samples 사용)
-X_multi = np.array([[0, 1, 2], [2, 1, 0]]).reshape(-1, 1)  # 여러 시퀀스를 학습시키기 위해 reshape 필요
-lengths = [3, 3]  # 각 시퀀스의 길이
-logprob_multi = model.score_samples(X_multi, lengths=lengths) #각 시퀀스에 대한 로그 확률 반환
-probabilities_multi = np.exp(logprob_multi) #각 시퀀스에 대한 확률 값 계산
-print(f"여러 관측값 시퀀스 발생 확률:\n {probabilities_multi}") # 출력 예시: [[0.0483] [0.0366]]
+    # 여러개의 관측값 시퀀스에 대한 확률 계산 (score_samples 사용)
+    X_multi = np.array([[0, 1, 2], [2, 1, 0]]).reshape(-1, 1)  # 여러 시퀀스를 학습시키기 위해 reshape 필요
+    lengths = [3, 3]  # 각 시퀀스의 길이
+    logprob_multi = model.score_samples(X_multi, lengths=lengths) #각 시퀀스에 대한 로그 확률 반환
+    probabilities_multi = np.exp(logprob_multi) #각 시퀀스에 대한 확률 값 계산
+    print(f"여러 관측값 시퀀스 발생 확률:\n {probabilities_multi}") # 출력 예시: [[0.0483] [0.0366]]
 
-# 모델에서 샘플 생성
-X_sampled, Z = model.sample(10)  # 10개의 시간 스텝에 대한 샘플 생성
-print(f"샘플된 관측값 시퀀스:\n {X_sampled.flatten()}")
-print(f"샘플된 은닉 상태 시퀀스:\n {Z}")
-```
+    # 모델에서 샘플 생성
+    X_sampled, Z = model.sample(10)  # 10개의 시간 스텝에 대한 샘플 생성
+    print(f"샘플된 관측값 시퀀스:\n {X_sampled.flatten()}")
+    print(f"샘플된 은닉 상태 시퀀스:\n {Z}")
+    ```
 <br><br>
 
 2. 디코딩 (Decoding): 디코딩 문제는 주어진 HMM 파라미터와 관측값 시퀀스가 주어졌을 때, 가장 가능성 높은 은닉 상태 시퀀스를 찾는 문제입니다. Viterbi 알고리즘은 이 문제를 효율적으로 해결하는 동적 프로그래밍 알고리즘입니다. 예를 들어, 아이스크림 소비량 시퀀스가 주어졌을 때, 어떤 날씨 시퀀스가 가장 가능성이 높은지 추론하는 것입니다.<br>
 
-```python
-import numpy as np
-from hmmlearn import hmm
+    ```python
+    import numpy as np
+    from hmmlearn import hmm
 
-# HMM 파라미터 (위와 동일)
-n_states = 2
-n_observations = 3
-start_prob = np.array([0.6, 0.4])
-trans_mat = np.array([[0.7, 0.3], [0.4, 0.6]])
-emission_prob = np.array([[0.1, 0.4, 0.5], [0.6, 0.3, 0.1]])
+    # HMM 파라미터 (위와 동일)
+    n_states = 2
+    n_observations = 3
+    start_prob = np.array([0.6, 0.4])
+    trans_mat = np.array([[0.7, 0.3], [0.4, 0.6]])
+    emission_prob = np.array([[0.1, 0.4, 0.5], [0.6, 0.3, 0.1]])
 
-# HMM 모델 생성
-model = hmm.MultinomialHMM(n_components=n_states)
-model.startprob_ = start_prob
-model.transmat_ = trans_mat
-model.emissionprob_ = emission_prob
+    # HMM 모델 생성
+    model = hmm.MultinomialHMM(n_components=n_states)
+    model.startprob_ = start_prob
+    model.transmat_ = trans_mat
+    model.emissionprob_ = emission_prob
 
-# 관측값 시퀀스 (위와 동일)
-X = np.array([[0], [1], [2]])  # 예: [적게 먹음, 보통 먹음, 많이 먹음]
+    # 관측값 시퀀스 (위와 동일)
+    X = np.array([[0], [1], [2]])  # 예: [적게 먹음, 보통 먹음, 많이 먹음]
 
-# 가장 가능성 높은 은닉 상태 시퀀스 찾기 (디코딩)
-logprob, states = model.decode(X)
-print(f"가장 가능성 높은 은닉 상태 시퀀스: {states}") # 출력 예시: [1 1 0] (추움, 추움, 더움)
-print(f"최대 로그 확률: {logprob}") # 출력 예시: -4.135166540181631
-```
+    # 가장 가능성 높은 은닉 상태 시퀀스 찾기 (디코딩)
+    logprob, states = model.decode(X)
+    print(f"가장 가능성 높은 은닉 상태 시퀀스: {states}") # 출력 예시: [1 1 0] (추움, 추움, 더움)
+    print(f"최대 로그 확률: {logprob}") # 출력 예시: -4.135166540181631
+    ```
 <br>
 
 3. 학습 (Learning): 학습 문제는 주어진 관측값 시퀀스를 사용하여 HMM의 파라미터(상태 전이 확률, 방출 확률, 초기 상태 확률)를 추정하는 문제입니다. Baum-Welch 알고리즘(Expectation-Maximization 알고리즘의 한 종류)은 이 문제를 반복적인 방법으로 해결합니다. 예를 들어, 여러 날 동안의 아이스크림 소비량 데이터를 사용하여 날씨 변화 패턴과 날씨에 따른 아이스크림 소비량 패턴을 학습하는 것입니다.<br>
 
-```python
-import numpy as np
-from hmmlearn import hmm
+    ```python
+    import numpy as np
+    from hmmlearn import hmm
 
-# HMM 모델 생성 (초기 파라미터는 랜덤으로 설정됨)
-n_states = 2
-n_observations = 3
-model = hmm.MultinomialHMM(n_components=n_states, n_iter=100)  # n_iter는 학습 반복 횟수
+    # HMM 모델 생성 (초기 파라미터는 랜덤으로 설정됨)
+    n_states = 2
+    n_observations = 3
+    model = hmm.MultinomialHMM(n_components=n_states, n_iter=100)  # n_iter는 학습 반복 횟수
 
-# 학습 데이터 (관측값 시퀀스)
-X = np.array([[0], [1], [2], [1], [0], [2], [0], [0]]) # 아이스크림 소비량 시퀀스
+    # 학습 데이터 (관측값 시퀀스)
+    X = np.array([[0], [1], [2], [1], [0], [2], [0], [0]]) # 아이스크림 소비량 시퀀스
 
-# 모델 학습 (Baum-Welch 알고리즘 사용)
-model.fit(X)
+    # 모델 학습 (Baum-Welch 알고리즘 사용)
+    model.fit(X)
 
-# 학습된 파라미터 출력
-print("학습된 상태 전이 확률:\n", model.transmat_)
-print("학습된 방출 확률:\n", model.emissionprob_)
-print("학습된 초기 상태 확률:\n", model.startprob_)
+    # 학습된 파라미터 출력
+    print("학습된 상태 전이 확률:\n", model.transmat_)
+    print("학습된 방출 확률:\n", model.emissionprob_)
+    print("학습된 초기 상태 확률:\n", model.startprob_)
 
-# 여러 시퀀스를 사용하여 학습
-X_multi = np.array([[0, 1, 2], [2, 1, 0], [0, 0, 1]]).reshape(-1, 1)
-lengths = [3, 3, 3]
-model_multi = hmm.MultinomialHMM(n_components=n_states, n_iter=100)
-model_multi.fit(X_multi, lengths=lengths)
-print("\n여러 시퀀스로 학습된 상태 전이 확률:\n", model_multi.transmat_)
-print("여러 시퀀스로 학습된 방출 확률:\n", model_multi.emissionprob_)
-print("여러 시퀀스로 학습된 초기 상태 확률:\n", model_multi.startprob_)
-```
-<br><br>
+    # 여러 시퀀스를 사용하여 학습
+    X_multi = np.array([[0, 1, 2], [2, 1, 0], [0, 0, 1]]).reshape(-1, 1)
+    lengths = [3, 3, 3]
+    model_multi = hmm.MultinomialHMM(n_components=n_states, n_iter=100)
+    model_multi.fit(X_multi, lengths=lengths)
+    print("\n여러 시퀀스로 학습된 상태 전이 확률:\n", model_multi.transmat_)
+    print("여러 시퀀스로 학습된 방출 확률:\n", model_multi.emissionprob_)
+    print("여러 시퀀스로 학습된 초기 상태 확률:\n", model_multi.startprob_)
+    ```
+<br>
 
 ### 은닉 마르코프 모델(Hidden Markov Model)의 활용 분야
 ---
@@ -157,7 +157,6 @@ HMM은 시간적인 맥락을 가지는 데이터를 분석하는 데 매우 유
 * 금융: 주가 예측, 시장 변동성 분석 등에 사용됩니다. 주가 변동을 관측값으로, 시장의 상태를 은닉 상태로 모델링하여 미래의 주가 변동을 예측할 수 있습니다.
 * 행동 인식: 비디오에서 사람의 행동을 인식합니다. 비디오 프레임의 변화를 관측값으로, 사람의 행동 패턴을 은닉 상태로 모델링할 수 있습니다.
 * 기타: 날씨 예측, 로봇 공학, 제조 공정 모니터링 등 다양한 분야에서 활용됩니다.
-
 <br><br> 
 
 ## 예시
@@ -208,7 +207,6 @@ X_sampled, Z = model.sample(10)  # 10개의 시간 스텝에 대한 샘플 생�
 print(f"샘플된 관측값 시퀀스:\n {X_sampled.flatten()}")
 print(f"샘플된 은닉 상태 시퀀스:\n {Z}")
 ```
-
-<br> 
+<br><br> 
 
 [Top](#){: .btn .btn--primary }{: .align-right}
