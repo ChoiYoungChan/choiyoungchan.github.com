@@ -26,8 +26,7 @@ last_modified_at: 2022-04-23
 <br>
 
 ![2022-04-23-QuickSort_006](https://user-images.githubusercontent.com/40765022/164965350-02f0ba7c-a474-47ca-89e0-7ccbbea38e0a.gif)<br>
-
-> (이미지 출처 : https://namu.wiki/w/%EC%A0%95%EB%A0%AC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?from=%ED%80%B5%20%EC%A0%95%EB%A0%AC#s-2.2.3)
+(이미지 출처 : https://namu.wiki/w/%EC%A0%95%EB%A0%AC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?from=%ED%80%B5%20%EC%A0%95%EB%A0%AC#s-2.2.3)
 <br><br>
 
 * 장점
